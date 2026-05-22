@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6C49B24-8EBB-4562-AC22-C9DF0A0AA9E5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Unity.Collections</RootNamespace>
+    <AssemblyName>Unity.Collections</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Il2CppInterop.Common" />
+    <Reference Include="Il2CppInterop.Runtime" />
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\..\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\..\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllocatorManager.cs" />
+    <Compile Include="BurstCompatibleAttribute.cs" />
+    <Compile Include="CollectionHelper.cs" />
+    <Compile Include="ConcurrentMask.cs" />
+    <Compile Include="CreatePropertyAttribute.cs" />
+    <Compile Include="FixedBytes126.cs" />
+    <Compile Include="FixedBytes16.cs" />
+    <Compile Include="FixedBytes30.cs" />
+    <Compile Include="FixedBytes4094.cs" />
+    <Compile Include="FixedBytes510.cs" />
+    <Compile Include="FixedBytes62.cs" />
+    <Compile Include="FixedList.cs" />
+    <Compile Include="FixedList128Bytes.cs" />
+    <Compile Include="FixedList128BytesDebugView.cs" />
+    <Compile Include="FixedList32Bytes.cs" />
+    <Compile Include="FixedList32BytesDebugView.cs" />
+    <Compile Include="FixedList4096Bytes.cs" />
+    <Compile Include="FixedList4096BytesDebugView.cs" />
+    <Compile Include="FixedList512Bytes.cs" />
+    <Compile Include="FixedList512BytesDebugView.cs" />
+    <Compile Include="FixedList64Bytes.cs" />
+    <Compile Include="FixedList64BytesDebugView.cs" />
+    <Compile Include="IIndexable.cs" />
+    <Compile Include="Il2CppMicrosoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Il2CppSystem\Runtime\CompilerServices\IsUnmanagedAttribute.cs" />
+    <Compile Include="Il2Cpp\_PrivateImplementationDetails_.cs" />
+    <Compile Include="Long1024.cs" />
+    <Compile Include="Long512.cs" />
+    <Compile Include="Long64.cs" />
+    <Compile Include="Long8.cs" />
+    <Compile Include="LowLevel\Unsafe\KeyValue.cs" />
+    <Compile Include="LowLevel\Unsafe\UnsafeHashMap.cs" />
+    <Compile Include="LowLevel\Unsafe\UnsafeHashMapBase.cs" />
+    <Compile Include="LowLevel\Unsafe\UnsafeHashMapData.cs" />
+    <Compile Include="LowLevel\Unsafe\UnsafeHashMapDebuggerTypeProxy.cs" />
+    <Compile Include="LowLevel\Unsafe\UnsafeList.cs" />
+    <Compile Include="LowLevel\Unsafe\UnsafeListTDebugView.cs" />
+    <Compile Include="LowLevel\Unsafe\UnsafeUtilityExtensions.cs" />
+    <Compile Include="Memory.cs" />
+    <Compile Include="NativeHashMap.cs" />
+    <Compile Include="NativeHashMapDebuggerTypeProxy.cs" />
+    <Compile Include="NativeList.cs" />
+    <Compile Include="NativeListDebugView.cs" />
+    <Compile Include="NativeMultiHashMapIterator.cs" />
+    <Compile Include="NotBurstCompatibleAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RewindableAllocator.cs" />
+    <Compile Include="Spinner.cs" />
+    <Compile Include="UnmanagedArray.cs" />
+    <Compile Include="xxHash3.cs" />
+    <Compile Include="xxHashDefaultKey.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1305425E-53B6-43C5-8815-A5672162DDDB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppDOTween">
+      <HintPath>..\..\..\Il2CppDOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Common" />
+    <Reference Include="Il2CppInterop.Runtime" />
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppRewired_Core">
+      <HintPath>..\..\..\Il2CppRewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\..\..\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\..\..\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\..\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>..\..\..\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\..\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\..\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>..\..\..\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\..\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\..\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Il2CppAudioHelm\AudioHelmClock.cs" />
+    <Compile Include="Il2CppAudioHelm\CommonParam.cs" />
+    <Compile Include="Il2CppAudioHelm\HelmAudioInit.cs" />
+    <Compile Include="Il2CppAudioHelm\Keyzone.cs" />
+    <Compile Include="Il2CppAudioHelm\MidiFile.cs" />
+    <Compile Include="Il2CppAudioHelm\Native.cs" />
+    <Compile Include="Il2CppAudioHelm\Note.cs" />
+    <Compile Include="Il2CppAudioHelm\NoteHandler.cs" />
+    <Compile Include="Il2CppAudioHelm\NoteRow.cs" />
+    <Compile Include="Il2CppAudioHelm\Param.cs" />
+    <Compile Include="Il2CppAudioHelm\Sampler.cs" />
+    <Compile Include="Il2CppAudioHelm\SampleSequencer.cs" />
+    <Compile Include="Il2CppAudioHelm\Sequencer.cs" />
+    <Compile Include="Il2CppAudioHelm\Utils.cs" />
+    <Compile Include="Il2CppDrumSampleInfo\Articulation.cs" />
+    <Compile Include="Il2CppDrumSampleInfo\Drum.cs" />
+    <Compile Include="Il2CppDrumSampleInfo\Mic.cs" />
+    <Compile Include="Il2CppDrumSampleInfo\SamplePack.cs" />
+    <Compile Include="Il2CppI2\Loc\ArabicMapping.cs" />
+    <Compile Include="Il2CppI2\Loc\ArabicTable.cs" />
+    <Compile Include="Il2CppI2\Loc\AutoChangeCultureInfo.cs" />
+    <Compile Include="Il2CppI2\Loc\BaseSpecializationManager.cs" />
+    <Compile Include="Il2CppI2\Loc\CallbackNotification.cs" />
+    <Compile Include="Il2CppI2\Loc\CoroutineManager.cs" />
+    <Compile Include="Il2CppI2\Loc\CustomLocalizeCallback.cs" />
+    <Compile Include="Il2CppI2\Loc\eLanguageDataFlags.cs" />
+    <Compile Include="Il2CppI2\Loc\ePluralType.cs" />
+    <Compile Include="Il2CppI2\Loc\eSpreadsheetUpdateMode.cs" />
+    <Compile Include="Il2CppI2\Loc\eTermType.cs" />
+    <Compile Include="Il2CppI2\Loc\EventCallback.cs" />
+    <Compile Include="Il2CppI2\Loc\Example_ChangeLanguage.cs" />
+    <Compile Include="Il2CppI2\Loc\Example_LocalizedString.cs" />
+    <Compile Include="Il2CppI2\Loc\GeneralArabicLetters.cs" />
+    <Compile Include="Il2CppI2\Loc\GlobalParametersExample.cs" />
+    <Compile Include="Il2CppI2\Loc\GoogleLanguages.cs" />
+    <Compile Include="Il2CppI2\Loc\GoogleTranslation.cs" />
+    <Compile Include="Il2CppI2\Loc\HindiFixer.cs" />
+    <Compile Include="Il2CppI2\Loc\I2BasePersistentStorage.cs" />
+    <Compile Include="Il2CppI2\Loc\I2CustomPersistentStorage.cs" />
+    <Compile Include="Il2CppI2\Loc\I2Utils.cs" />
+    <Compile Include="Il2CppI2\Loc\ILanguageSource.cs" />
+    <Compile Include="Il2CppI2\Loc\ILocalizationParamsManager.cs" />
+    <Compile Include="Il2CppI2\Loc\ILocalizeTarget.cs" />
+    <Compile Include="Il2CppI2\Loc\ILocalizeTargetDescriptor.cs" />
+    <Compile Include="Il2CppI2\Loc\IResourceManager_Bundles.cs" />
+    <Compile Include="Il2CppI2\Loc\IsolatedArabicLetters.cs" />
+    <Compile Include="Il2CppI2\Loc\LanguageData.cs" />
+    <Compile Include="Il2CppI2\Loc\LanguageSource.cs" />
+    <Compile Include="Il2CppI2\Loc\LanguageSourceAsset.cs" />
+    <Compile Include="Il2CppI2\Loc\LanguageSourceData.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizationManager.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizationParamsManager.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizationReader.cs" />
+    <Compile Include="Il2CppI2\Loc\Localize.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeDropdown.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizedString.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTargetDesc.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTargetDesc_Child.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTargetDesc_Prefab.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTargetDesc_Type.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget_TextMeshPro_Label.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget_TextMeshPro_UGUI.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget_UnityStandard_AudioSource.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget_UnityStandard_Child.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget_UnityStandard_MeshRenderer.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget_UnityStandard_Prefab.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget_UnityStandard_SpriteRenderer.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget_UnityStandard_TextMesh.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget_UnityStandard_VideoPlayer.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget_UnityUI_Image.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget_UnityUI_RawImage.cs" />
+    <Compile Include="Il2CppI2\Loc\LocalizeTarget_UnityUI_Text.cs" />
+    <Compile Include="Il2CppI2\Loc\PersistentStorage.cs" />
+    <Compile Include="Il2CppI2\Loc\RealTimeTranslation.cs" />
+    <Compile Include="Il2CppI2\Loc\RegisterBundlesManager.cs" />
+    <Compile Include="Il2CppI2\Loc\RegisterCallback_AllowSyncFromGoogle.cs" />
+    <Compile Include="Il2CppI2\Loc\RegisterGlobalParameters.cs" />
+    <Compile Include="Il2CppI2\Loc\ResourceManager.cs" />
+    <Compile Include="Il2CppI2\Loc\RTLFixer.cs" />
+    <Compile Include="Il2CppI2\Loc\RTLFixerTool.cs" />
+    <Compile Include="Il2CppI2\Loc\ScriptLocalization.cs" />
+    <Compile Include="Il2CppI2\Loc\ScriptTerms.cs" />
+    <Compile Include="Il2CppI2\Loc\SetLanguage.cs" />
+    <Compile Include="Il2CppI2\Loc\SetLanguageDropdown.cs" />
+    <Compile Include="Il2CppI2\Loc\SimpleButton.cs" />
+    <Compile Include="Il2CppI2\Loc\SimpleJSON\JSON.cs" />
+    <Compile Include="Il2CppI2\Loc\SimpleJSON\JSONArray.cs" />
+    <Compile Include="Il2CppI2\Loc\SimpleJSON\JSONBinaryTag.cs" />
+    <Compile Include="Il2CppI2\Loc\SimpleJSON\JSONClass.cs" />
+    <Compile Include="Il2CppI2\Loc\SimpleJSON\JSONData.cs" />
+    <Compile Include="Il2CppI2\Loc\SimpleJSON\JSONLazyCreator.cs" />
+    <Compile Include="Il2CppI2\Loc\SimpleJSON\JSONNode.cs" />
+    <Compile Include="Il2CppI2\Loc\SpecializationManager.cs" />
+    <Compile Include="Il2CppI2\Loc\StringObfucator.cs" />
+    <Compile Include="Il2CppI2\Loc\TashkeelLocation.cs" />
+    <Compile Include="Il2CppI2\Loc\TermData.cs" />
+    <Compile Include="Il2CppI2\Loc\TermsPopup.cs" />
+    <Compile Include="Il2CppI2\Loc\ToggleLanguage.cs" />
+    <Compile Include="Il2CppI2\Loc\TranslationFlag.cs" />
+    <Compile Include="Il2CppI2\Loc\TranslationJob.cs" />
+    <Compile Include="Il2CppI2\Loc\TranslationJob_GET.cs" />
+    <Compile Include="Il2CppI2\Loc\TranslationJob_Main.cs" />
+    <Compile Include="Il2CppI2\Loc\TranslationJob_POST.cs" />
+    <Compile Include="Il2CppI2\Loc\TranslationJob_WEB.cs" />
+    <Compile Include="Il2CppI2\Loc\TranslationJob_WWW.cs" />
+    <Compile Include="Il2CppI2\Loc\TranslationQuery.cs" />
+    <Compile Include="Il2CppMusicUtils\MidiCymbal.cs" />
+    <Compile Include="Il2CppMusicUtils\MidiDrum.cs" />
+    <Compile Include="Il2CppRewired\Data\UserDataStore_PlayerPrefs.cs" />
+    <Compile Include="Il2CppRewired\Demos\Bullet.cs" />
+    <Compile Include="Il2CppRewired\Demos\ControlMapperDemoMessage.cs" />
+    <Compile Include="Il2CppRewired\Demos\ControlRemappingDemo1.cs" />
+    <Compile Include="Il2CppRewired\Demos\CustomControllerDemo.cs" />
+    <Compile Include="Il2CppRewired\Demos\CustomControllerDemo_Player.cs" />
+    <Compile Include="Il2CppRewired\Demos\CustomControllersTiltDemo.cs" />
+    <Compile Include="Il2CppRewired\Demos\DualShock4SpecialFeaturesExample.cs" />
+    <Compile Include="Il2CppRewired\Demos\EightPlayersExample_Player.cs" />
+    <Compile Include="Il2CppRewired\Demos\FallbackJoystickIdentificationDemo.cs" />
+    <Compile Include="Il2CppRewired\Demos\GamepadTemplateUI\ControllerUIEffect.cs" />
+    <Compile Include="Il2CppRewired\Demos\GamepadTemplateUI\ControllerUIElement.cs" />
+    <Compile Include="Il2CppRewired\Demos\GamepadTemplateUI\GamepadTemplateUI.cs" />
+    <Compile Include="Il2CppRewired\Demos\PlayerMouseSpriteExample.cs" />
+    <Compile Include="Il2CppRewired\Demos\PlayerPointerEventHandlerExample.cs" />
+    <Compile Include="Il2CppRewired\Demos\PressAnyButtonToJoinExample_Assigner.cs" />
+    <Compile Include="Il2CppRewired\Demos\PressAnyButtonToJoinExample_GamePlayer.cs" />
+    <Compile Include="Il2CppRewired\Demos\PressStartToJoinExample_Assigner.cs" />
+    <Compile Include="Il2CppRewired\Demos\PressStartToJoinExample_GamePlayer.cs" />
+    <Compile Include="Il2CppRewired\Demos\SimpleCombinedKeyboardMouseRemapping.cs" />
+    <Compile Include="Il2CppRewired\Demos\SimpleControlRemapping.cs" />
+    <Compile Include="Il2CppRewired\Demos\TouchButtonExample.cs" />
+    <Compile Include="Il2CppRewired\Demos\TouchJoystickExample.cs" />
+    <Compile Include="Il2CppRewired\Demos\UIPointer.cs" />
+    <Compile Include="Il2CppRewired\FlightPedalsTemplate.cs" />
+    <Compile Include="Il2CppRewired\FlightYokeTemplate.cs" />
+    <Compile Include="Il2CppRewired\GamepadTemplate.cs" />
+    <Compile Include="Il2CppRewired\HOTASTemplate.cs" />
+    <Compile Include="Il2CppRewired\IFlightPedalsTemplate.cs" />
+    <Compile Include="Il2CppRewired\IFlightYokeTemplate.cs" />
+    <Compile Include="Il2CppRewired\IGamepadTemplate.cs" />
+    <Compile Include="Il2CppRewired\IHOTASTemplate.cs" />
+    <Compile Include="Il2CppRewired\InputManager.cs" />
+    <Compile Include="Il2CppRewired\Integration\UnityUI\PlayerPointerEventData.cs" />
+    <Compile Include="Il2CppRewired\Integration\UnityUI\PointerEventType.cs" />
+    <Compile Include="Il2CppRewired\Integration\UnityUI\RewiredEventSystem.cs" />
+    <Compile Include="Il2CppRewired\Integration\UnityUI\RewiredPointerInputModule.cs" />
+    <Compile Include="Il2CppRewired\Integration\UnityUI\RewiredStandaloneInputModule.cs" />
+    <Compile Include="Il2CppRewired\Internal\ControllerTemplateFactory.cs" />
+    <Compile Include="Il2CppRewired\IRacingWheelTemplate.cs" />
+    <Compile Include="Il2CppRewired\ISixDofControllerTemplate.cs" />
+    <Compile Include="Il2CppRewired\Platforms\Switch\NintendoSwitchInputManager.cs" />
+    <Compile Include="Il2CppRewired\RacingWheelTemplate.cs" />
+    <Compile Include="Il2CppRewired\SixDofControllerTemplate.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\ButtonInfo.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\CalibrationWindow.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\CanvasScalerExt.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\CanvasScalerFitter.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\ControlMapper.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\CustomButton.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\CustomSlider.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\CustomToggle.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\ICustomSelectable.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\InputBehaviorWindow.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\InputFieldInfo.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\InputRow.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\LanguageData.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\LanguageDataBase.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\ScrollbarVisibilityHelper.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\ScrollRectSelectableChild.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\ThemedElement.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\ThemeSettings.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\ToggleInfo.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\UIControl.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\UIControlSet.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\UIElementInfo.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\UIGroup.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\UIImageHelper.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\UISelectionUtility.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\UISliderControl.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\UITools.cs" />
+    <Compile Include="Il2CppRewired\UI\ControlMapper\Window.cs" />
+    <Compile Include="Il2CppRewired\Utils\ExternalTools.cs" />
+    <Compile Include="Il2Cpp\AbstractSerializableDictionary.cs" />
+    <Compile Include="Il2Cpp\ActEnder.cs" />
+    <Compile Include="Il2Cpp\Alarm.cs" />
+    <Compile Include="Il2Cpp\AlarmDoor.cs" />
+    <Compile Include="Il2Cpp\AlbumMenu.cs" />
+    <Compile Include="Il2Cpp\AmbientCar.cs" />
+    <Compile Include="Il2Cpp\AnimalSounder.cs" />
+    <Compile Include="Il2Cpp\AnimalSpawner.cs" />
+    <Compile Include="Il2Cpp\Animate.cs" />
+    <Compile Include="Il2Cpp\ApeLegs.cs" />
+    <Compile Include="Il2Cpp\ArmorCollision.cs" />
+    <Compile Include="Il2Cpp\ArmorState.cs" />
+    <Compile Include="Il2Cpp\AudioEnvironmentController.cs" />
+    <Compile Include="Il2Cpp\AudioYieldDictionary.cs" />
+    <Compile Include="Il2Cpp\BabyLegs.cs" />
+    <Compile Include="Il2Cpp\BabyMovement.cs" />
+    <Compile Include="Il2Cpp\Bag.cs" />
+    <Compile Include="Il2Cpp\BagHolder.cs" />
+    <Compile Include="Il2Cpp\Banana.cs" />
+    <Compile Include="Il2Cpp\BananaManager.cs" />
+    <Compile Include="Il2Cpp\BandpassFilterController.cs" />
+    <Compile Include="Il2Cpp\BarDoor.cs" />
+    <Compile Include="Il2Cpp\BaseSerializableDictionary.cs" />
+    <Compile Include="Il2Cpp\BearAttack.cs" />
+    <Compile Include="Il2Cpp\BearLegs.cs" />
+    <Compile Include="Il2Cpp\BearMovement.cs" />
+    <Compile Include="Il2Cpp\BearState.cs" />
+    <Compile Include="Il2Cpp\BearVision.cs" />
+    <Compile Include="Il2Cpp\BennettBlur.cs" />
+    <Compile Include="Il2Cpp\BigDoor.cs" />
+    <Compile Include="Il2Cpp\Biped.cs" />
+    <Compile Include="Il2Cpp\BipedRedux.cs" />
+    <Compile Include="Il2Cpp\Bird.cs" />
+    <Compile Include="Il2Cpp\Bleeder.cs" />
+    <Compile Include="Il2Cpp\BlinkingLight.cs" />
+    <Compile Include="Il2Cpp\BlockController.cs" />
+    <Compile Include="Il2Cpp\BlockMesh.cs" />
+    <Compile Include="Il2Cpp\BloodCam.cs" />
+    <Compile Include="Il2Cpp\BloodData.cs" />
+    <Compile Include="Il2Cpp\BloodFootTrig.cs" />
+    <Compile Include="Il2Cpp\BloodTeleporterDeleter.cs" />
+    <Compile Include="Il2Cpp\BlowTrigger.cs" />
+    <Compile Include="Il2Cpp\Boat03Setpiece.cs" />
+    <Compile Include="Il2Cpp\Boat04BlowTrigger.cs" />
+    <Compile Include="Il2Cpp\Boat04Triggerer.cs" />
+    <Compile Include="Il2Cpp\BoatIntro.cs" />
+    <Compile Include="Il2Cpp\BoatIntroTile.cs" />
+    <Compile Include="Il2Cpp\BoatOutro.cs" />
+    <Compile Include="Il2Cpp\BoatWallPropPicker.cs" />
+    <Compile Include="Il2Cpp\BombingManager.cs" />
+    <Compile Include="Il2Cpp\BooReplacer.cs" />
+    <Compile Include="Il2Cpp\Breathe.cs" />
+    <Compile Include="Il2Cpp\BringToFront.cs" />
+    <Compile Include="Il2Cpp\BuildingDrawer.cs" />
+    <Compile Include="Il2Cpp\BuildingEdge.cs" />
+    <Compile Include="Il2Cpp\BulletTrail.cs" />
+    <Compile Include="Il2Cpp\Bunker08Blower.cs" />
+    <Compile Include="Il2Cpp\BunkerBlower.cs" />
+    <Compile Include="Il2Cpp\BunkerIntro.cs" />
+    <Compile Include="Il2Cpp\BunkerIntroTile.cs" />
+    <Compile Include="Il2Cpp\BunkerLightsUpper.cs" />
+    <Compile Include="Il2Cpp\BunkerOutro.cs" />
+    <Compile Include="Il2Cpp\BunkerStealthTriggerer.cs" />
+    <Compile Include="Il2Cpp\Cable.cs" />
+    <Compile Include="Il2Cpp\CableCap.cs" />
+    <Compile Include="Il2Cpp\CableSupervisor.cs" />
+    <Compile Include="Il2Cpp\CageDoor.cs" />
+    <Compile Include="Il2Cpp\CamControl.cs" />
+    <Compile Include="Il2Cpp\CamFollower.cs" />
+    <Compile Include="Il2Cpp\CanopyMaker.cs" />
+    <Compile Include="Il2Cpp\Car.cs" />
+    <Compile Include="Il2Cpp\CarAudioTrigger.cs" />
+    <Compile Include="Il2Cpp\CarSpawner.cs" />
+    <Compile Include="Il2Cpp\CarWindow.cs" />
+    <Compile Include="Il2Cpp\CeilingParticles.cs" />
+    <Compile Include="Il2Cpp\CivGun.cs" />
+    <Compile Include="Il2Cpp\CivSpawner.cs" />
+    <Compile Include="Il2Cpp\CivState.cs" />
+    <Compile Include="Il2Cpp\Cloud.cs" />
+    <Compile Include="Il2Cpp\ColUtil.cs" />
+    <Compile Include="Il2Cpp\Conifer.cs" />
+    <Compile Include="Il2Cpp\Container.cs" />
+    <Compile Include="Il2Cpp\ContainerDoor.cs" />
+    <Compile Include="Il2Cpp\ContainerStack.cs" />
+    <Compile Include="Il2Cpp\CopCar.cs" />
+    <Compile Include="Il2Cpp\CorpseArm.cs" />
+    <Compile Include="Il2Cpp\CorpseHips.cs" />
+    <Compile Include="Il2Cpp\Crate.cs" />
+    <Compile Include="Il2Cpp\Credits.cs" />
+    <Compile Include="Il2Cpp\CreditsTextureMaker.cs" />
+    <Compile Include="Il2Cpp\DebugPt.cs" />
+    <Compile Include="Il2Cpp\DeskKid.cs" />
+    <Compile Include="Il2Cpp\DestroyOverTime.cs" />
+    <Compile Include="Il2Cpp\Destructor.cs" />
+    <Compile Include="Il2Cpp\DistDisabler.cs" />
+    <Compile Include="Il2Cpp\Door.cs" />
+    <Compile Include="Il2Cpp\DoorMusicStarter.cs" />
+    <Compile Include="Il2Cpp\DoorTrigger.cs" />
+    <Compile Include="Il2Cpp\DrumReverbController.cs" />
+    <Compile Include="Il2Cpp\DrumSample.cs" />
+    <Compile Include="Il2Cpp\Dynamite.cs" />
+    <Compile Include="Il2Cpp\DynoChasing.cs" />
+    <Compile Include="Il2Cpp\DynoCollision.cs" />
+    <Compile Include="Il2Cpp\DynoCrate.cs" />
+    <Compile Include="Il2Cpp\DynoState.cs" />
+    <Compile Include="Il2Cpp\EasingFunctions.cs" />
+    <Compile Include="Il2Cpp\ElephantGun.cs" />
+    <Compile Include="Il2Cpp\ElevatorDoor.cs" />
+    <Compile Include="Il2Cpp\Emancipator.cs" />
+    <Compile Include="Il2Cpp\EmergencyLight.cs" />
+    <Compile Include="Il2Cpp\EndingDoor.cs" />
+    <Compile Include="Il2Cpp\EnemyState.cs" />
+    <Compile Include="Il2Cpp\Exit.cs" />
+    <Compile Include="Il2Cpp\Explosion.cs" />
+    <Compile Include="Il2Cpp\ExplosiveBarrel.cs" />
+    <Compile Include="Il2Cpp\FallenBomb.cs" />
+    <Compile Include="Il2Cpp\FallenDoor.cs" />
+    <Compile Include="Il2Cpp\FallTrigger.cs" />
+    <Compile Include="Il2Cpp\FarOffSniper.cs" />
+    <Compile Include="Il2Cpp\FatCollision.cs" />
+    <Compile Include="Il2Cpp\FatState.cs" />
+    <Compile Include="Il2Cpp\FinalBlit.cs" />
+    <Compile Include="Il2Cpp\FireBlast.cs" />
+    <Compile Include="Il2Cpp\FireBomb.cs" />
+    <Compile Include="Il2Cpp\FireExtinguisher.cs" />
+    <Compile Include="Il2Cpp\FireManager.cs" />
+    <Compile Include="Il2Cpp\Firer.cs" />
+    <Compile Include="Il2Cpp\FlameAttacking.cs" />
+    <Compile Include="Il2Cpp\FlameCollision.cs" />
+    <Compile Include="Il2Cpp\FlameLightSkirt.cs" />
+    <Compile Include="Il2Cpp\FlamePart.cs" />
+    <Compile Include="Il2Cpp\FlameState.cs" />
+    <Compile Include="Il2Cpp\FlameThrower.cs" />
+    <Compile Include="Il2Cpp\Flash.cs" />
+    <Compile Include="Il2Cpp\FlashLight.cs" />
+    <Compile Include="Il2Cpp\Fleer.cs" />
+    <Compile Include="Il2Cpp\FloorScoreSpawner.cs" />
+    <Compile Include="Il2Cpp\FootprintEmitter.cs" />
+    <Compile Include="Il2Cpp\Forester.cs" />
+    <Compile Include="Il2Cpp\FX.cs" />
+    <Compile Include="Il2Cpp\GamArr.cs" />
+    <Compile Include="Il2Cpp\Generator.cs" />
+    <Compile Include="Il2Cpp\Geo.cs" />
+    <Compile Include="Il2Cpp\GetTilePalCol.cs" />
+    <Compile Include="Il2Cpp\GFX.cs" />
+    <Compile Include="Il2Cpp\Glass.cs" />
+    <Compile Include="Il2Cpp\Global.cs" />
+    <Compile Include="Il2Cpp\Grabber.cs" />
+    <Compile Include="Il2Cpp\GrabToolTipper.cs" />
+    <Compile Include="Il2Cpp\GrimeManager.cs" />
+    <Compile Include="Il2Cpp\GState.cs" />
+    <Compile Include="Il2Cpp\GuardAttacking.cs" />
+    <Compile Include="Il2Cpp\GuardAudioState.cs" />
+    <Compile Include="Il2Cpp\GuardAudioStateTiming.cs" />
+    <Compile Include="Il2Cpp\GuardBlind.cs" />
+    <Compile Include="Il2Cpp\GuardChasing.cs" />
+    <Compile Include="Il2Cpp\GuardCollision.cs" />
+    <Compile Include="Il2Cpp\GuardCowering.cs" />
+    <Compile Include="Il2Cpp\GuardEndPush.cs" />
+    <Compile Include="Il2Cpp\GuardFalling.cs" />
+    <Compile Include="Il2Cpp\GuardFleeing.cs" />
+    <Compile Include="Il2Cpp\GuardFollowing.cs" />
+    <Compile Include="Il2Cpp\GuardGrabbed.cs" />
+    <Compile Include="Il2Cpp\GuardGun.cs" />
+    <Compile Include="Il2Cpp\GuardHangout.cs" />
+    <Compile Include="Il2Cpp\GuardIdle.cs" />
+    <Compile Include="Il2Cpp\GuardInvestigate.cs" />
+    <Compile Include="Il2Cpp\GuardLookingAround.cs" />
+    <Compile Include="Il2Cpp\GuardMode.cs" />
+    <Compile Include="Il2Cpp\GuardOnFire.cs" />
+    <Compile Include="Il2Cpp\GuardPanicking.cs" />
+    <Compile Include="Il2Cpp\GuardPushed.cs" />
+    <Compile Include="Il2Cpp\GuardScriptedMovement.cs" />
+    <Compile Include="Il2Cpp\GuardSearching.cs" />
+    <Compile Include="Il2Cpp\GuardSpawner.cs" />
+    <Compile Include="Il2Cpp\GuardStalking.cs" />
+    <Compile Include="Il2Cpp\GuardState.cs" />
+    <Compile Include="Il2Cpp\GuardStunned.cs" />
+    <Compile Include="Il2Cpp\GuardSwinging.cs" />
+    <Compile Include="Il2Cpp\GuardVision.cs" />
+    <Compile Include="Il2Cpp\GuardWaiting.cs" />
+    <Compile Include="Il2Cpp\HandControl.cs" />
+    <Compile Include="Il2Cpp\HeadFollower.cs" />
+    <Compile Include="Il2Cpp\HeadRotator.cs" />
+    <Compile Include="Il2Cpp\HealthMaster.cs" />
+    <Compile Include="Il2Cpp\Hole.cs" />
+    <Compile Include="Il2Cpp\HoleDrawer.cs" />
+    <Compile Include="Il2Cpp\IntComparer.cs" />
+    <Compile Include="Il2Cpp\Intro.cs" />
+    <Compile Include="Il2Cpp\IntroManager.cs" />
+    <Compile Include="Il2Cpp\IntroRoad.cs" />
+    <Compile Include="Il2Cpp\Intv2.cs" />
+    <Compile Include="Il2Cpp\Intv2Comp.cs" />
+    <Compile Include="Il2Cpp\KeyboardTxtSwitcher.cs" />
+    <Compile Include="Il2Cpp\KeyPair.cs" />
+    <Compile Include="Il2Cpp\Lab07LightsUpper.cs" />
+    <Compile Include="Il2Cpp\LabEndForestMaker.cs" />
+    <Compile Include="Il2Cpp\LabIntro.cs" />
+    <Compile Include="Il2Cpp\LabOutro.cs" />
+    <Compile Include="Il2Cpp\LaserSight.cs" />
+    <Compile Include="Il2Cpp\Legs.cs" />
+    <Compile Include="Il2Cpp\Level.cs" />
+    <Compile Include="Il2Cpp\LevelGoer.cs" />
+    <Compile Include="Il2Cpp\LevelLine.cs" />
+    <Compile Include="Il2Cpp\LevelStartTrigger.cs" />
+    <Compile Include="Il2Cpp\LevelTitle.cs" />
+    <Compile Include="Il2Cpp\LevelTransitionManager.cs" />
+    <Compile Include="Il2Cpp\LightCone.cs" />
+    <Compile Include="Il2Cpp\ListenerController.cs" />
+    <Compile Include="Il2Cpp\ListenerControllerPatch.cs" />
+    <Compile Include="Il2Cpp\LoadTester.cs" />
+    <Compile Include="Il2Cpp\LoadTestMenu.cs" />
+    <Compile Include="Il2Cpp\LockRotation.cs" />
+    <Compile Include="Il2Cpp\MachineGun.cs" />
+    <Compile Include="Il2Cpp\MainMenu.cs" />
+    <Compile Include="Il2Cpp\MainMenuMusic.cs" />
+    <Compile Include="Il2Cpp\MapGenerator.cs" />
+    <Compile Include="Il2Cpp\MapTile.cs" />
+    <Compile Include="Il2Cpp\MediumDoor.cs" />
+    <Compile Include="Il2Cpp\Menu.cs" />
+    <Compile Include="Il2Cpp\MenuLoader.cs" />
+    <Compile Include="Il2Cpp\MeshPt.cs" />
+    <Compile Include="Il2Cpp\MessageReceiver.cs" />
+    <Compile Include="Il2Cpp\MetalPierStepSetter.cs" />
+    <Compile Include="Il2Cpp\Mix.cs" />
+    <Compile Include="Il2Cpp\MixTester.cs" />
+    <Compile Include="Il2Cpp\Movement.cs" />
+    <Compile Include="Il2Cpp\Mover.cs" />
+    <Compile Include="Il2Cpp\MTile.cs" />
+    <Compile Include="Il2Cpp\MusicStarter.cs" />
+    <Compile Include="Il2Cpp\MusicSystem.cs" />
+    <Compile Include="Il2Cpp\MusicTransitionManager.cs" />
+    <Compile Include="Il2Cpp\MyBlurCam.cs" />
+    <Compile Include="Il2Cpp\MyBlurManager.cs" />
+    <Compile Include="Il2Cpp\MyPart.cs" />
+    <Compile Include="Il2Cpp\MyResources.cs" />
+    <Compile Include="Il2Cpp\MySave.cs" />
+    <Compile Include="Il2Cpp\MySaveFileInterface.cs" />
+    <Compile Include="Il2Cpp\MySaveFilePC.cs" />
+    <Compile Include="Il2Cpp\NinSwitch_InputController.cs" />
+    <Compile Include="Il2Cpp\Nod.cs" />
+    <Compile Include="Il2Cpp\Node.cs" />
+    <Compile Include="Il2Cpp\NodeList.cs" />
+    <Compile Include="Il2Cpp\NodePool.cs" />
+    <Compile Include="Il2Cpp\NoteSequence.cs" />
+    <Compile Include="Il2Cpp\NumberPicker.cs" />
+    <Compile Include="Il2Cpp\Obstacle.cs" />
+    <Compile Include="Il2Cpp\OcclusionController.cs" />
+    <Compile Include="Il2Cpp\Office08MusicSwitcher.cs" />
+    <Compile Include="Il2Cpp\OfficeIntro.cs" />
+    <Compile Include="Il2Cpp\OfficeIntroTrigger.cs" />
+    <Compile Include="Il2Cpp\OfficeOutro.cs" />
+    <Compile Include="Il2Cpp\OfficeViewManager.cs" />
+    <Compile Include="Il2Cpp\Oil.cs" />
+    <Compile Include="Il2Cpp\OnForMapGen.cs" />
+    <Compile Include="Il2Cpp\OutroGate.cs" />
+    <Compile Include="Il2Cpp\OverlapChecker.cs" />
+    <Compile Include="Il2Cpp\Palette.cs" />
+    <Compile Include="Il2Cpp\PaletteSwitchTrigger.cs" />
+    <Compile Include="Il2Cpp\Pallete.cs" />
+    <Compile Include="Il2Cpp\PalleteMapper.cs" />
+    <Compile Include="Il2Cpp\PalleteTrigger.cs" />
+    <Compile Include="Il2Cpp\Panicker.cs" />
+    <Compile Include="Il2Cpp\PanickingGorilla.cs" />
+    <Compile Include="Il2Cpp\Paralax.cs" />
+    <Compile Include="Il2Cpp\ParalaxSimple.cs" />
+    <Compile Include="Il2Cpp\PartKiller.cs" />
+    <Compile Include="Il2Cpp\PartLedgeKiller.cs" />
+    <Compile Include="Il2Cpp\PathFinding.cs" />
+    <Compile Include="Il2Cpp\PathFollower.cs" />
+    <Compile Include="Il2Cpp\PathNode.cs" />
+    <Compile Include="Il2Cpp\Paw.cs" />
+    <Compile Include="Il2Cpp\PebbleBlower.cs" />
+    <Compile Include="Il2Cpp\PFCell.cs" />
+    <Compile Include="Il2Cpp\PFGrids.cs" />
+    <Compile Include="Il2Cpp\PickRandomStartPoint.cs" />
+    <Compile Include="Il2Cpp\Pistol.cs" />
+    <Compile Include="Il2Cpp\PlaneShadow.cs" />
+    <Compile Include="Il2Cpp\PlayerHands.cs" />
+    <Compile Include="Il2Cpp\PlayerMovement.cs" />
+    <Compile Include="Il2Cpp\PlayerPrefsCustom.cs" />
+    <Compile Include="Il2Cpp\PlayerPrefsInterface.cs" />
+    <Compile Include="Il2Cpp\PlayerPrefsUnity.cs" />
+    <Compile Include="Il2Cpp\PlayerState.cs" />
+    <Compile Include="Il2Cpp\Pole.cs" />
+    <Compile Include="Il2Cpp\PoleWire.cs" />
+    <Compile Include="Il2Cpp\PolyDrawer.cs" />
+    <Compile Include="Il2Cpp\Post.cs" />
+    <Compile Include="Il2Cpp\PState.cs" />
+    <Compile Include="Il2Cpp\Pusher.cs" />
+    <Compile Include="Il2Cpp\QuadDrawer.cs" />
+    <Compile Include="Il2Cpp\Quadrant.cs" />
+    <Compile Include="Il2Cpp\RandomRotation.cs" />
+    <Compile Include="Il2Cpp\RecordPlayer.cs" />
+    <Compile Include="Il2Cpp\Reinforcements.cs" />
+    <Compile Include="Il2Cpp\RemoveShit.cs" />
+    <Compile Include="Il2Cpp\RenderTextureResizer.cs" />
+    <Compile Include="Il2Cpp\ReplacerSettings.cs" />
+    <Compile Include="Il2Cpp\ResonanceAudio.cs" />
+    <Compile Include="Il2Cpp\ResonanceAudioAcousticMesh.cs" />
+    <Compile Include="Il2Cpp\ResonanceAudioListener.cs" />
+    <Compile Include="Il2Cpp\ResonanceAudioMaterialMap.cs" />
+    <Compile Include="Il2Cpp\ResonanceAudioMaterialMapper.cs" />
+    <Compile Include="Il2Cpp\ResonanceAudioMaterialMapperUpdater.cs" />
+    <Compile Include="Il2Cpp\ResonanceAudioReverbProbe.cs" />
+    <Compile Include="Il2Cpp\ResonanceAudioRoom.cs" />
+    <Compile Include="Il2Cpp\ResonanceAudioRoomManager.cs" />
+    <Compile Include="Il2Cpp\ResonanceAudioSource.cs" />
+    <Compile Include="Il2Cpp\ResonanceRoomPatch.cs" />
+    <Compile Include="Il2Cpp\ReverbPatch.cs" />
+    <Compile Include="Il2Cpp\Rock.cs" />
+    <Compile Include="Il2Cpp\Rocket.cs" />
+    <Compile Include="Il2Cpp\RockTech.cs" />
+    <Compile Include="Il2Cpp\RockTechVisSender.cs" />
+    <Compile Include="Il2Cpp\RollingBarrel.cs" />
+    <Compile Include="Il2Cpp\Roofwire.cs" />
+    <Compile Include="Il2Cpp\RoomState.cs" />
+    <Compile Include="Il2Cpp\RotateAwayFromPlayer.cs" />
+    <Compile Include="Il2Cpp\RotShadowPicker.cs" />
+    <Compile Include="Il2Cpp\Rpg.cs" />
+    <Compile Include="Il2Cpp\RumbleShake.cs" />
+    <Compile Include="Il2Cpp\SampleBank.cs" />
+    <Compile Include="Il2Cpp\SamplerPatch.cs" />
+    <Compile Include="Il2Cpp\SaveDict.cs" />
+    <Compile Include="Il2Cpp\ScaleTextToScreen.cs" />
+    <Compile Include="Il2Cpp\ScaleToOrthoSize.cs" />
+    <Compile Include="Il2Cpp\Score.cs" />
+    <Compile Include="Il2Cpp\ScoreComparer.cs" />
+    <Compile Include="Il2Cpp\ScreenShaker.cs" />
+    <Compile Include="Il2Cpp\Scripter.cs" />
+    <Compile Include="Il2Cpp\ScriptNode.cs" />
+    <Compile Include="Il2Cpp\SearchGrid.cs" />
+    <Compile Include="Il2Cpp\SECTRLoopThrough.cs" />
+    <Compile Include="Il2Cpp\SECTR_AudioAmbience.cs" />
+    <Compile Include="Il2Cpp\SECTR_AudioBus.cs" />
+    <Compile Include="Il2Cpp\SECTR_AudioCue.cs" />
+    <Compile Include="Il2Cpp\SECTR_AudioCueInstance.cs" />
+    <Compile Include="Il2Cpp\SECTR_AudioDemoUI.cs" />
+    <Compile Include="Il2Cpp\SECTR_AudioEnvironment.cs" />
+    <Compile Include="Il2Cpp\SECTR_AudioEnvironmentTrigger.cs" />
+    <Compile Include="Il2Cpp\SECTR_AudioEnvironmentZone.cs" />
+    <Compile Include="Il2Cpp\SECTR_AudioSource.cs" />
+    <Compile Include="Il2Cpp\SECTR_AudioSystem.cs" />
+    <Compile Include="Il2Cpp\SECTR_CharacterAudio.cs" />
+    <Compile Include="Il2Cpp\SECTR_CharacterMotor.cs" />
+    <Compile Include="Il2Cpp\SECTR_ComputeRMS.cs" />
+    <Compile Include="Il2Cpp\SECTR_CueParam.cs" />
+    <Compile Include="Il2Cpp\SECTR_DemoUI.cs" />
+    <Compile Include="Il2Cpp\SECTR_Door.cs" />
+    <Compile Include="Il2Cpp\SECTR_DoorAudio.cs" />
+    <Compile Include="Il2Cpp\SECTR_FogDisable.cs" />
+    <Compile Include="Il2Cpp\SECTR_FPController.cs" />
+    <Compile Include="Il2Cpp\SECTR_FPSController.cs" />
+    <Compile Include="Il2Cpp\SECTR_Geometry.cs" />
+    <Compile Include="Il2Cpp\SECTR_GhostController.cs" />
+    <Compile Include="Il2Cpp\SECTR_Graph.cs" />
+    <Compile Include="Il2Cpp\SECTR_Hull.cs" />
+    <Compile Include="Il2Cpp\SECTR_IAudioInstance.cs" />
+    <Compile Include="Il2Cpp\SECTR_ImpactAudio.cs" />
+    <Compile Include="Il2Cpp\SECTR_Member.cs" />
+    <Compile Include="Il2Cpp\SECTR_Modules.cs" />
+    <Compile Include="Il2Cpp\SECTR_MusicTrigger.cs" />
+    <Compile Include="Il2Cpp\SECTR_PointSource.cs" />
+    <Compile Include="Il2Cpp\SECTR_Portal.cs" />
+    <Compile Include="Il2Cpp\SECTR_PriorityQueue.cs" />
+    <Compile Include="Il2Cpp\SECTR_PropagationSource.cs" />
+    <Compile Include="Il2Cpp\SECTR_RegionSource.cs" />
+    <Compile Include="Il2Cpp\SECTR_Sector.cs" />
+    <Compile Include="Il2Cpp\SECTR_SplineSource.cs" />
+    <Compile Include="Il2Cpp\SECTR_StartMusic.cs" />
+    <Compile Include="Il2Cpp\SECTR_ToolTip.cs" />
+    <Compile Include="Il2Cpp\SECTR_TriggerSource.cs" />
+    <Compile Include="Il2Cpp\SECTR_ULong.cs" />
+    <Compile Include="Il2Cpp\SECTR_Wanderer.cs" />
+    <Compile Include="Il2Cpp\SequencerBagEntry.cs" />
+    <Compile Include="Il2Cpp\SequencerPatch.cs" />
+    <Compile Include="Il2Cpp\SerializableDictionary.cs" />
+    <Compile Include="Il2Cpp\SerializableObjectDictionary.cs" />
+    <Compile Include="Il2Cpp\SetFPS.cs" />
+    <Compile Include="Il2Cpp\SetToDefPos.cs" />
+    <Compile Include="Il2Cpp\ShadowAng.cs" />
+    <Compile Include="Il2Cpp\ShadowComparer.cs" />
+    <Compile Include="Il2Cpp\Shadower.cs" />
+    <Compile Include="Il2Cpp\ShadowerUpdateManager.cs" />
+    <Compile Include="Il2Cpp\ShadowLayerer.cs" />
+    <Compile Include="Il2Cpp\Shotgun.cs" />
+    <Compile Include="Il2Cpp\ShuffleBag.cs" />
+    <Compile Include="Il2Cpp\SideB.cs" />
+    <Compile Include="Il2Cpp\SideOfBuilding.cs" />
+    <Compile Include="Il2Cpp\SightUtil.cs" />
+    <Compile Include="Il2Cpp\SingleIntro.cs" />
+    <Compile Include="Il2Cpp\SingleIntroTile.cs" />
+    <Compile Include="Il2Cpp\SkinnyAttacking.cs" />
+    <Compile Include="Il2Cpp\SkinnyState.cs" />
+    <Compile Include="Il2Cpp\SkyBridgeDrawer.cs" />
+    <Compile Include="Il2Cpp\Smoke.cs" />
+    <Compile Include="Il2Cpp\SmokePart.cs" />
+    <Compile Include="Il2Cpp\SmokePartTest.cs" />
+    <Compile Include="Il2Cpp\Snake.cs" />
+    <Compile Include="Il2Cpp\SniperAttacking.cs" />
+    <Compile Include="Il2Cpp\SniperRifle.cs" />
+    <Compile Include="Il2Cpp\SniperState.cs" />
+    <Compile Include="Il2Cpp\Sonar.cs" />
+    <Compile Include="Il2Cpp\SonarCircle.cs" />
+    <Compile Include="Il2Cpp\SonarTrigger.cs" />
+    <Compile Include="Il2Cpp\SortingLayerExposed.cs" />
+    <Compile Include="Il2Cpp\SortPinner.cs" />
+    <Compile Include="Il2Cpp\SoundSystem.cs" />
+    <Compile Include="Il2Cpp\Spark.cs" />
+    <Compile Include="Il2Cpp\SparkAnimator.cs" />
+    <Compile Include="Il2Cpp\Sparker.cs" />
+    <Compile Include="Il2Cpp\SparkMover.cs" />
+    <Compile Include="Il2Cpp\SpawnProbability.cs" />
+    <Compile Include="Il2Cpp\SpawnSafetyOrigin.cs" />
+    <Compile Include="Il2Cpp\SpriteOverApe.cs" />
+    <Compile Include="Il2Cpp\SquadManager.cs" />
+    <Compile Include="Il2Cpp\Stairs.cs" />
+    <Compile Include="Il2Cpp\StartBugs.cs" />
+    <Compile Include="Il2Cpp\StartTileTeleporter.cs" />
+    <Compile Include="Il2Cpp\State.cs" />
+    <Compile Include="Il2Cpp\StaticBreakable.cs" />
+    <Compile Include="Il2Cpp\StaticPropPicker.cs" />
+    <Compile Include="Il2Cpp\StatusEffect.cs" />
+    <Compile Include="Il2Cpp\StatusFalling.cs" />
+    <Compile Include="Il2Cpp\StatusFleeing.cs" />
+    <Compile Include="Il2Cpp\StatusGrabbed.cs" />
+    <Compile Include="Il2Cpp\StatusOnFire.cs" />
+    <Compile Include="Il2Cpp\StatusPanicking.cs" />
+    <Compile Include="Il2Cpp\StatusPushed.cs" />
+    <Compile Include="Il2Cpp\StatusStunned.cs" />
+    <Compile Include="Il2Cpp\StatusSwinging.cs" />
+    <Compile Include="Il2Cpp\StatusTranqed.cs" />
+    <Compile Include="Il2Cpp\StatusWaiting.cs" />
+    <Compile Include="Il2Cpp\SteamPipe.cs" />
+    <Compile Include="Il2Cpp\StreetBloodSplat.cs" />
+    <Compile Include="Il2Cpp\StreetCar.cs" />
+    <Compile Include="Il2Cpp\StreetPicker.cs" />
+    <Compile Include="Il2Cpp\StunTrigger.cs" />
+    <Compile Include="Il2Cpp\StupidDoor.cs" />
+    <Compile Include="Il2Cpp\SuperShield.cs" />
+    <Compile Include="Il2Cpp\SwingyDoor.cs" />
+    <Compile Include="Il2Cpp\SwingyDoorMusicStarter.cs" />
+    <Compile Include="Il2Cpp\SwingySpawnPt.cs" />
+    <Compile Include="Il2Cpp\SwitchDrumsForSkybridge.cs" />
+    <Compile Include="Il2Cpp\Tags.cs" />
+    <Compile Include="Il2Cpp\TaughtCable.cs" />
+    <Compile Include="Il2Cpp\Throwable.cs" />
+    <Compile Include="Il2Cpp\TileBags.cs" />
+    <Compile Include="Il2Cpp\TileUpdater.cs" />
+    <Compile Include="Il2Cpp\TitleTester.cs" />
+    <Compile Include="Il2Cpp\TrailerEnder.cs" />
+    <Compile Include="Il2Cpp\TrailerManager.cs" />
+    <Compile Include="Il2Cpp\TranqDart.cs" />
+    <Compile Include="Il2Cpp\TranqGun.cs" />
+    <Compile Include="Il2Cpp\TransitionTeleporterManager.cs" />
+    <Compile Include="Il2Cpp\TurnOffForDeathScreen.cs" />
+    <Compile Include="Il2Cpp\TurnOffIfNoDeaths.cs" />
+    <Compile Include="Il2Cpp\TurnOnForDeathScreen.cs" />
+    <Compile Include="Il2Cpp\UnarmedGuard.cs" />
+    <Compile Include="Il2Cpp\Waiter.cs" />
+    <Compile Include="Il2Cpp\WaitForNextBar.cs" />
+    <Compile Include="Il2Cpp\WaitForNextBeat.cs" />
+    <Compile Include="Il2Cpp\WallDestroyer.cs" />
+    <Compile Include="Il2Cpp\WaterDad.cs" />
+    <Compile Include="Il2Cpp\WaterParallaxer.cs" />
+    <Compile Include="Il2Cpp\WhistleFleeing.cs" />
+    <Compile Include="Il2Cpp\WhistleState.cs" />
+    <Compile Include="Il2Cpp\YieldDict.cs" />
+    <Compile Include="Il2Cpp\ZooOutro.cs" />
+    <Compile Include="Il2Cpp\_PrivateImplementationDetails_.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

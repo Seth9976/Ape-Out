@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF78A8B5-7D7B-4F3C-8551-6B82E417CB6B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Il2CppSystem.Core</RootNamespace>
+    <AssemblyName>Il2CppSystem.Core</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Il2CppInterop.Common" />
+    <Reference Include="Il2CppInterop.Runtime" />
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Il2CppSystem\Collections\Generic\HashSet.cs" />
+    <Compile Include="Il2CppSystem\Collections\Generic\ICollectionDebugView.cs" />
+    <Compile Include="Il2CppSystem\Dynamic\Utils\CacheDict.cs" />
+    <Compile Include="Il2CppSystem\Dynamic\Utils\ContractUtils.cs" />
+    <Compile Include="Il2CppSystem\Linq\Buffer.cs" />
+    <Compile Include="Il2CppSystem\Linq\EmptyEnumerable.cs" />
+    <Compile Include="Il2CppSystem\Linq\Enumerable.cs" />
+    <Compile Include="Il2CppSystem\Linq\EnumerableSorter.2.cs" />
+    <Compile Include="Il2CppSystem\Linq\EnumerableSorter.cs" />
+    <Compile Include="Il2CppSystem\Linq\Error.cs" />
+    <Compile Include="Il2CppSystem\Linq\Expressions\Error.cs" />
+    <Compile Include="Il2CppSystem\Linq\Expressions\Expression.2.cs" />
+    <Compile Include="Il2CppSystem\Linq\Expressions\Expression.cs" />
+    <Compile Include="Il2CppSystem\Linq\Expressions\ExpressionType.cs" />
+    <Compile Include="Il2CppSystem\Linq\Expressions\LambdaExpression.cs" />
+    <Compile Include="Il2CppSystem\Linq\Expressions\MemberExpression.cs" />
+    <Compile Include="Il2CppSystem\Linq\Expressions\Strings.cs" />
+    <Compile Include="Il2CppSystem\Linq\GroupedEnumerable.cs" />
+    <Compile Include="Il2CppSystem\Linq\IdentityFunction.cs" />
+    <Compile Include="Il2CppSystem\Linq\IGrouping.cs" />
+    <Compile Include="Il2CppSystem\Linq\IOrderedEnumerable.cs" />
+    <Compile Include="Il2CppSystem\Linq\Lookup.cs" />
+    <Compile Include="Il2CppSystem\Linq\OrderedEnumerable.2.cs" />
+    <Compile Include="Il2CppSystem\Linq\OrderedEnumerable.cs" />
+    <Compile Include="Il2CppSystem\Linq\Set.cs" />
+    <Compile Include="Il2CppSystem\Security\Cryptography\AesCryptoServiceProvider.cs" />
+    <Compile Include="Il2CppSystem\Security\Cryptography\AesManaged.cs" />
+    <Compile Include="Il2CppSystem\Security\Cryptography\AesTransform.cs" />
+    <Compile Include="Il2Cpp\SR.cs" />
+    <Compile Include="Il2Cpp\_PrivateImplementationDetails_.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

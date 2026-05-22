@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9713856-9622-4224-8A64-98A1C8E075EC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Il2CppRewired_Core</RootNamespace>
+    <AssemblyName>Il2CppRewired_Core</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Il2CppInterop.Common" />
+    <Reference Include="Il2CppInterop.Runtime" />
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\..\..\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml">
+      <HintPath>..\..\..\Il2CppSystem.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Il2CppRewired\ActionElementMap.cs" />
+    <Compile Include="Il2CppRewired\ActionIdPropertyAttribute.cs" />
+    <Compile Include="Il2CppRewired\ActiveControllerChangedDelegate.cs" />
+    <Compile Include="Il2CppRewired\Axis2DCalibration.cs" />
+    <Compile Include="Il2CppRewired\AxisCalibration.cs" />
+    <Compile Include="Il2CppRewired\AxisCalibrationData.cs" />
+    <Compile Include="Il2CppRewired\AxisCoordinateMode.cs" />
+    <Compile Include="Il2CppRewired\AxisRange.cs" />
+    <Compile Include="Il2CppRewired\AxisSensitivity2DType.cs" />
+    <Compile Include="Il2CppRewired\AxisSensitivityType.cs" />
+    <Compile Include="Il2CppRewired\AxisType.cs" />
+    <Compile Include="Il2CppRewired\BoolOption.cs" />
+    <Compile Include="Il2CppRewired\BridgedController.cs" />
+    <Compile Include="Il2CppRewired\BridgedControllerHWInfo.cs" />
+    <Compile Include="Il2CppRewired\ButtonLoopSet.cs" />
+    <Compile Include="Il2CppRewired\ButtonStateFlags.cs" />
+    <Compile Include="Il2CppRewired\ButtonStateRecorder.cs" />
+    <Compile Include="Il2CppRewired\CalibrationMap.cs" />
+    <Compile Include="Il2CppRewired\CalibrationMapSaveData.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\ComponentControl.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\ComponentController.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\CustomController.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\CustomControllerControl.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\Data\CustomControllerElementSelector.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\Data\CustomControllerElementTarget.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\Data\CustomControllerElementTargetSet.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\Data\CustomControllerElementTargetSetForBoolean.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\Data\CustomControllerElementTargetSetForFloat.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\Data\CustomControllerSelector.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\Effects\RotateAroundAxis.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\Effects\TouchInteractableTransitioner.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\Effects\TouchJoystickAngleIndicator.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\Effects\TouchJoystickRadialIndicator.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\IComponentControl.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\IComponentController.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\TiltControl.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\TouchButton.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\TouchControl.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\TouchController.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\TouchInteractable.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\TouchJoystick.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\TouchPad.cs" />
+    <Compile Include="Il2CppRewired\ComponentControls\TouchRegion.cs" />
+    <Compile Include="Il2CppRewired\Components\ComponentWrapper.cs" />
+    <Compile Include="Il2CppRewired\Components\PlayerController.cs" />
+    <Compile Include="Il2CppRewired\Components\PlayerMouse.cs" />
+    <Compile Include="Il2CppRewired\CompoundControllerElementType.cs" />
+    <Compile Include="Il2CppRewired\Config\LogLevel.cs" />
+    <Compile Include="Il2CppRewired\Config\LogLevelFlags.cs" />
+    <Compile Include="Il2CppRewired\Config\ThrottleCalibrationMode.cs" />
+    <Compile Include="Il2CppRewired\Config\UpdateLoopSetting.cs" />
+    <Compile Include="Il2CppRewired\Consts.cs" />
+    <Compile Include="Il2CppRewired\ControlDeviceType.cs" />
+    <Compile Include="Il2CppRewired\Controller.cs" />
+    <Compile Include="Il2CppRewired\ControllerAssignmentChangedEventArgs.cs" />
+    <Compile Include="Il2CppRewired\ControllerDataUpdater.cs" />
+    <Compile Include="Il2CppRewired\ControllerDisconnectedEventArgs.cs" />
+    <Compile Include="Il2CppRewired\ControllerElementIdentifier.cs" />
+    <Compile Include="Il2CppRewired\ControllerElementTarget.cs" />
+    <Compile Include="Il2CppRewired\ControllerElementType.cs" />
+    <Compile Include="Il2CppRewired\ControllerExtensions\DualSenseExtension.cs" />
+    <Compile Include="Il2CppRewired\ControllerExtensions\DualSenseMicrophoneLightMode.cs" />
+    <Compile Include="Il2CppRewired\ControllerExtensions\DualSenseOtherLightBrightness.cs" />
+    <Compile Include="Il2CppRewired\ControllerExtensions\DualSensePlayerLightFlags.cs" />
+    <Compile Include="Il2CppRewired\ControllerExtensions\DualShock4Extension.cs" />
+    <Compile Include="Il2CppRewired\ControllerExtensions\DualShock4MotorType.cs" />
+    <Compile Include="Il2CppRewired\ControllerExtensions\IDualShock4Extension.cs" />
+    <Compile Include="Il2CppRewired\ControllerExtensions\RailDriverExtension.cs" />
+    <Compile Include="Il2CppRewired\ControllerExtensions\SteamControllerActionOrigin.cs" />
+    <Compile Include="Il2CppRewired\ControllerExtensions\SteamControllerExtension.cs" />
+    <Compile Include="Il2CppRewired\ControllerExtensions\SteamControllerPadType.cs" />
+    <Compile Include="Il2CppRewired\ControllerIdentifier.cs" />
+    <Compile Include="Il2CppRewired\ControllerMap.cs" />
+    <Compile Include="Il2CppRewired\ControllerMapEnabler.cs" />
+    <Compile Include="Il2CppRewired\ControllerMapLayoutManager.cs" />
+    <Compile Include="Il2CppRewired\ControllerMapSaveData.cs" />
+    <Compile Include="Il2CppRewired\ControllerMapWithAxes.cs" />
+    <Compile Include="Il2CppRewired\ControllerPollingInfo.cs" />
+    <Compile Include="Il2CppRewired\ControllerSetSelector.cs" />
+    <Compile Include="Il2CppRewired\ControllerStatusChangedEventArgs.cs" />
+    <Compile Include="Il2CppRewired\ControllerSubType.cs" />
+    <Compile Include="Il2CppRewired\ControllerTemplate.cs" />
+    <Compile Include="Il2CppRewired\ControllerTemplateActionAxisMap.cs" />
+    <Compile Include="Il2CppRewired\ControllerTemplateActionButtonMap.cs" />
+    <Compile Include="Il2CppRewired\ControllerTemplateActionElementMap.cs" />
+    <Compile Include="Il2CppRewired\ControllerTemplateElementIdentifier.cs" />
+    <Compile Include="Il2CppRewired\ControllerTemplateElementSourceType.cs" />
+    <Compile Include="Il2CppRewired\ControllerTemplateElementTarget.cs" />
+    <Compile Include="Il2CppRewired\ControllerTemplateElementType.cs" />
+    <Compile Include="Il2CppRewired\ControllerTemplateMap.cs" />
+    <Compile Include="Il2CppRewired\ControllerType.cs" />
+    <Compile Include="Il2CppRewired\ControllerWithAxes.cs" />
+    <Compile Include="Il2CppRewired\ControllerWithMap.cs" />
+    <Compile Include="Il2CppRewired\CustomClassObfuscation.cs" />
+    <Compile Include="Il2CppRewired\CustomController.cs" />
+    <Compile Include="Il2CppRewired\CustomControllerMap.cs" />
+    <Compile Include="Il2CppRewired\CustomControllerMapSaveData.cs" />
+    <Compile Include="Il2CppRewired\CustomObfuscation.cs" />
+    <Compile Include="Il2CppRewired\Data\ConfigVars.cs" />
+    <Compile Include="Il2CppRewired\Data\ControllerDataFiles.cs" />
+    <Compile Include="Il2CppRewired\Data\ControllerMapEnabler_RuleSet_Editor.cs" />
+    <Compile Include="Il2CppRewired\Data\ControllerMapEnabler_Rule_Editor.cs" />
+    <Compile Include="Il2CppRewired\Data\ControllerMapLayoutManager_RuleSet_Editor.cs" />
+    <Compile Include="Il2CppRewired\Data\ControllerMapLayoutManager_Rule_Editor.cs" />
+    <Compile Include="Il2CppRewired\Data\ControllerSetSelector_Editor.cs" />
+    <Compile Include="Il2CppRewired\Data\ControllerTemplateElementIdentifier_Editor.cs" />
+    <Compile Include="Il2CppRewired\Data\CustomController_Editor.cs" />
+    <Compile Include="Il2CppRewired\Data\EditorPlatformData.cs" />
+    <Compile Include="Il2CppRewired\Data\EditorSettings.cs" />
+    <Compile Include="Il2CppRewired\Data\IConfigVars_Internal.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\ActionCategoryMap.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\AlternateAxisCalibrationType.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\AxisCalibrationInfo.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\AxisCalibrationType.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\AxisDirection.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\ControllerMap_Editor.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\ControllerTemplateDPadMapping.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\ControllerTemplateHatMapping.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\ControllerTemplateSpecialElementMapping.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\ControllerTemplateStick6DMapping.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\ControllerTemplateStickMapping.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\ControllerTemplateThrottleMapping.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\ControllerTemplateThumbStickMapping.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\ControllerTemplateYokeMapping.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\CustomCalculation.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\CustomCalculation_Accelerometer.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\CustomCalculation_CompareElementValues.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\CustomCalculation_FirstNonZero.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\CustomCalculation_LogitechGRacingWheelPedals.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\HardwareAxisInfo.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\HardwareAxisType.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\HardwareButtonInfo.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\HardwareControllerTemplateMap.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\HardwareElementSourceType.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\HardwareElementSourceTypeWithHat.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\HardwareJoystickMap.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\HardwareJoystickTemplateMap.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\HatDirection.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\HatType.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\IControllerTemplateMapMapping_Internal.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\IControllerTemplateMapSpecialElement_Internal.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\IHardwareControllerMap.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\IHardwareControllerMap_Internal.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\IHardwareControllerTemplateMap.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\IHardwareControllerTemplateMap_Internal.cs" />
+    <Compile Include="Il2CppRewired\Data\Mapping\SpecialAxisType.cs" />
+    <Compile Include="Il2CppRewired\Data\Player_Editor.cs" />
+    <Compile Include="Il2CppRewired\Data\RuntimeData.cs" />
+    <Compile Include="Il2CppRewired\Data\UserData.cs" />
+    <Compile Include="Il2CppRewired\Data\UserDataStore.cs" />
+    <Compile Include="Il2CppRewired\DeadZone2DType.cs" />
+    <Compile Include="Il2CppRewired\Dev\ActionIdFieldInfoAttribute.cs" />
+    <Compile Include="Il2CppRewired\Dev\PlayerIdFieldInfoAttribute.cs" />
+    <Compile Include="Il2CppRewired\Dev\Tools\DebugInformation.cs" />
+    <Compile Include="Il2CppRewired\Dev\Tools\DirectInputJoystickElementIdentifier.cs" />
+    <Compile Include="Il2CppRewired\Dev\Tools\JoystickElementIdentifier.cs" />
+    <Compile Include="Il2CppRewired\Dev\Tools\OSXJoystickElementIdentifier.cs" />
+    <Compile Include="Il2CppRewired\Dev\Tools\RawInputJoystickElementIdentifier.cs" />
+    <Compile Include="Il2CppRewired\Dev\Tools\UnityJoystickElementIdentifier.cs" />
+    <Compile Include="Il2CppRewired\Drivers\Interfaces\IControllerDriver.cs" />
+    <Compile Include="Il2CppRewired\Drivers\Interfaces\IDriver_DualSense.cs" />
+    <Compile Include="Il2CppRewired\Drivers\Interfaces\IDriver_DualShock4.cs" />
+    <Compile Include="Il2CppRewired\Drivers\Interfaces\IDriver_RailDriver.cs" />
+    <Compile Include="Il2CppRewired\Drivers\Interfaces\IDriver_SwitchJoyConLeft.cs" />
+    <Compile Include="Il2CppRewired\Drivers\Interfaces\IDriver_SwitchJoyConRight.cs" />
+    <Compile Include="Il2CppRewired\Drivers\Interfaces\IDriver_SwitchProController.cs" />
+    <Compile Include="Il2CppRewired\ElementAssignment.cs" />
+    <Compile Include="Il2CppRewired\ElementAssignmentConflictCheck.cs" />
+    <Compile Include="Il2CppRewired\ElementAssignmentConflictInfo.cs" />
+    <Compile Include="Il2CppRewired\ElementAssignmentInfo.cs" />
+    <Compile Include="Il2CppRewired\ElementAssignmentType.cs" />
+    <Compile Include="Il2CppRewired\EnumConverter.cs" />
+    <Compile Include="Il2CppRewired\GCProfiler.cs" />
+    <Compile Include="Il2CppRewired\HardwareControllerMapIdentifier.cs" />
+    <Compile Include="Il2CppRewired\HardwareControllerMap_Game.cs" />
+    <Compile Include="Il2CppRewired\HardwareJoystickMap_InputManager.cs" />
+    <Compile Include="Il2CppRewired\HID\DeviceConnectionType.cs" />
+    <Compile Include="Il2CppRewired\HID\Drivers\DualSenseDriver.cs" />
+    <Compile Include="Il2CppRewired\HID\Drivers\DualShock4Driver.cs" />
+    <Compile Include="Il2CppRewired\HID\Drivers\HIDDeviceDriver.cs" />
+    <Compile Include="Il2CppRewired\HID\Drivers\RailDriverDriver.cs" />
+    <Compile Include="Il2CppRewired\HID\HIDAccelerometer.cs" />
+    <Compile Include="Il2CppRewired\HID\HidAsyncState.cs" />
+    <Compile Include="Il2CppRewired\HID\HIDAxis.cs" />
+    <Compile Include="Il2CppRewired\HID\HIDButton.cs" />
+    <Compile Include="Il2CppRewired\HID\HIDControllerElement.cs" />
+    <Compile Include="Il2CppRewired\HID\HIDControllerElementWithDataSet.cs" />
+    <Compile Include="Il2CppRewired\HID\HIDGyroscope.cs" />
+    <Compile Include="Il2CppRewired\HID\HIDHat.cs" />
+    <Compile Include="Il2CppRewired\HID\HIDLight.cs" />
+    <Compile Include="Il2CppRewired\HID\HidOutputReportHandler.cs" />
+    <Compile Include="Il2CppRewired\HID\HIDTouchpad.cs" />
+    <Compile Include="Il2CppRewired\HID\HIDVibrationMotor.cs" />
+    <Compile Include="Il2CppRewired\HID\OutputReport.cs" />
+    <Compile Include="Il2CppRewired\HID\OutputReportOptions.cs" />
+    <Compile Include="Il2CppRewired\HID\SpecialDevices.cs" />
+    <Compile Include="Il2CppRewired\IControllerElementTarget.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplate.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateAxis.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateAxis2D.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateAxis3D.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateAxis6D.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateAxisSource.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateButton.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateButtonSource.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateDPad.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateElement.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateElementSource.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateElement_Internal.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateHat.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateStick.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateStick6D.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateThrottle.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateThumbStick.cs" />
+    <Compile Include="Il2CppRewired\IControllerTemplateYoke.cs" />
+    <Compile Include="Il2CppRewired\Initializer.cs" />
+    <Compile Include="Il2CppRewired\InputAction.cs" />
+    <Compile Include="Il2CppRewired\InputActionEventData.cs" />
+    <Compile Include="Il2CppRewired\InputActionEventType.cs" />
+    <Compile Include="Il2CppRewired\InputActionSourceData.cs" />
+    <Compile Include="Il2CppRewired\InputActionType.cs" />
+    <Compile Include="Il2CppRewired\InputBehavior.cs" />
+    <Compile Include="Il2CppRewired\InputCategory.cs" />
+    <Compile Include="Il2CppRewired\InputLayout.cs" />
+    <Compile Include="Il2CppRewired\InputManagers\CustomInputManager.cs" />
+    <Compile Include="Il2CppRewired\InputManager_Base.cs" />
+    <Compile Include="Il2CppRewired\InputMapCategory.cs" />
+    <Compile Include="Il2CppRewired\InputMapper.cs" />
+    <Compile Include="Il2CppRewired\InputPlatform.cs" />
+    <Compile Include="Il2CppRewired\InputSource.cs" />
+    <Compile Include="Il2CppRewired\InputSources\SDL2\SDL2InputSource.cs" />
+    <Compile Include="Il2CppRewired\InputSourceWrapper.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IAndroidFallbackDS4Helper.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IAndroidFallbackPlatformHelper.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IControllerAssigner.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IControllerElementIdentifierCommon_Internal.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IControllerExtensionSource.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IControllerMapStore.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IControllerTemplateElementIdentifier.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IControllerTemplateElementIdentifier_Editor.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IControllerVibrator.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IElementIdentifierTool.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IInputManagerJoystick.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IInputManagerJoystickPublic.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IInputSource.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\INativePlatformHelper.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IPoolableObject.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\ISteamControllerInternal.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IUnifiedKeyboardSource.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IUnifiedMouseSource.cs" />
+    <Compile Include="Il2CppRewired\Interfaces\IUserDataStore.cs" />
+    <Compile Include="Il2CppRewired\Internal\GUIText.cs" />
+    <Compile Include="Il2CppRewired\Internal\OnGUIHelper.cs" />
+    <Compile Include="Il2CppRewired\Internal\StandaloneAxis.cs" />
+    <Compile Include="Il2CppRewired\Internal\StandaloneAxis2D.cs" />
+    <Compile Include="Il2CppRewired\IPlayerController.cs" />
+    <Compile Include="Il2CppRewired\IPlayerMouse.cs" />
+    <Compile Include="Il2CppRewired\Joystick.cs" />
+    <Compile Include="Il2CppRewired\JoystickCalibrationMapSaveData.cs" />
+    <Compile Include="Il2CppRewired\JoystickMap.cs" />
+    <Compile Include="Il2CppRewired\JoystickMapSaveData.cs" />
+    <Compile Include="Il2CppRewired\JoystickType.cs" />
+    <Compile Include="Il2CppRewired\Keyboard.cs" />
+    <Compile Include="Il2CppRewired\KeyboardKeyCode.cs" />
+    <Compile Include="Il2CppRewired\KeyboardMap.cs" />
+    <Compile Include="Il2CppRewired\KeyboardMapSaveData.cs" />
+    <Compile Include="Il2CppRewired\Logger.cs" />
+    <Compile Include="Il2CppRewired\LowLevelInputEvent.cs" />
+    <Compile Include="Il2CppRewired\ModifierKey.cs" />
+    <Compile Include="Il2CppRewired\ModifierKeyFlags.cs" />
+    <Compile Include="Il2CppRewired\Mouse.cs" />
+    <Compile Include="Il2CppRewired\MouseInputElement.cs" />
+    <Compile Include="Il2CppRewired\MouseMap.cs" />
+    <Compile Include="Il2CppRewired\MouseMapSaveData.cs" />
+    <Compile Include="Il2CppRewired\MouseOtherAxisMode.cs" />
+    <Compile Include="Il2CppRewired\MouseXYAxisDeltaCalc.cs" />
+    <Compile Include="Il2CppRewired\MouseXYAxisMode.cs" />
+    <Compile Include="Il2CppRewired\MultiBoolValue.cs" />
+    <Compile Include="Il2CppRewired\PidVid.cs" />
+    <Compile Include="Il2CppRewired\PlatformInitializer.cs" />
+    <Compile Include="Il2CppRewired\PlatformInputManager.cs" />
+    <Compile Include="Il2CppRewired\Platforms\Custom\CustomInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\DirectInputAxis.cs" />
+    <Compile Include="Il2CppRewired\Platforms\EditorPlatform.cs" />
+    <Compile Include="Il2CppRewired\Platforms\GameCoreScarlettPrimaryInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\GameCoreXboxOnePrimaryInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\LinuxStandalonePrimaryInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\OSXAxis.cs" />
+    <Compile Include="Il2CppRewired\Platforms\OSXStandalonePrimaryInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\Platform.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4PrimaryInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\Internal\ControllerInformation.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\Internal\LoggedInUser.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\Internal\PadControllerInformation.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\Internal\PadDeviceClassExtendedInformation.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\Internal\PadStickInformation.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\Internal\PadTouchPadInformation.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\IPS4AimExtensionSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\IPS4ControllerExtensionSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\IPS4ControllerExtensionSourceLight.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\IPS4ControllerExtensionSourceSixAxisSensor.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\IPS4ControllerExtensionSourceTouchPad.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\IPS4ControllerExtensionSourceVibrator.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\IPS4ControllerSetExtensionSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\IPS4GamepadExtensionSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\PS4AimExtension.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\PS4AimMotorType.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\PS4ControllerExtension.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\PS4GamepadExtension.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\PS4GamepadMotorType.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS4\PS4InputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\PS5PrimaryInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\RawInputAxis.cs" />
+    <Compile Include="Il2CppRewired\Platforms\ScriptingAPILevel.cs" />
+    <Compile Include="Il2CppRewired\Platforms\ScriptingBackend.cs" />
+    <Compile Include="Il2CppRewired\Platforms\StadiaPrimaryInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\UnityAxis.cs" />
+    <Compile Include="Il2CppRewired\Platforms\UnityButton.cs" />
+    <Compile Include="Il2CppRewired\Platforms\WebGLGamepadMappingType.cs" />
+    <Compile Include="Il2CppRewired\Platforms\WebGLOSType.cs" />
+    <Compile Include="Il2CppRewired\Platforms\WebGLPrimaryInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\WebGLWebBrowserType.cs" />
+    <Compile Include="Il2CppRewired\Platforms\WebplayerPlatform.cs" />
+    <Compile Include="Il2CppRewired\Platforms\WindowsStandalonePrimaryInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\WindowsUWPPrimaryInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\XboxOnePrimaryInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\XboxOne\IXboxOneInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\XboxOne\XboxOneGamepadExtension.cs" />
+    <Compile Include="Il2CppRewired\Platforms\XboxOne\XboxOneGamepadMotorType.cs" />
+    <Compile Include="Il2CppRewired\Platforms\XboxOne\XboxOneInputSource.cs" />
+    <Compile Include="Il2CppRewired\Platforms\XInputAxis.cs" />
+    <Compile Include="Il2CppRewired\Platforms\XInputButton.cs" />
+    <Compile Include="Il2CppRewired\Platforms\XInputDeviceSubType.cs" />
+    <Compile Include="Il2CppRewired\Player.cs" />
+    <Compile Include="Il2CppRewired\PlayerActiveControllerChangedDelegate.cs" />
+    <Compile Include="Il2CppRewired\PlayerController.cs" />
+    <Compile Include="Il2CppRewired\PlayerIdPropertyAttribute.cs" />
+    <Compile Include="Il2CppRewired\PlayerMouse.cs" />
+    <Compile Include="Il2CppRewired\PlayerSaveData.cs" />
+    <Compile Include="Il2CppRewired\Pole.cs" />
+    <Compile Include="Il2CppRewired\Profiler.cs" />
+    <Compile Include="Il2CppRewired\ReInput.cs" />
+    <Compile Include="Il2CppRewired\RewiredVersion.cs" />
+    <Compile Include="Il2CppRewired\SteamAction.cs" />
+    <Compile Include="Il2CppRewired\SteamActionSet.cs" />
+    <Compile Include="Il2CppRewired\ThreadSafeUnityInput.cs" />
+    <Compile Include="Il2CppRewired\TouchInfo.cs" />
+    <Compile Include="Il2CppRewired\UI\IMouseInputSource.cs" />
+    <Compile Include="Il2CppRewired\UI\ITouchInputSource.cs" />
+    <Compile Include="Il2CppRewired\UI\IVisibilityChangedHandler.cs" />
+    <Compile Include="Il2CppRewired\UI\UIAnchor.cs" />
+    <Compile Include="Il2CppRewired\UI\UIPivot.cs" />
+    <Compile Include="Il2CppRewired\UnityInputHelper.cs" />
+    <Compile Include="Il2CppRewired\UnityUnifiedKeyboardSource.cs" />
+    <Compile Include="Il2CppRewired\UnityUnifiedMouseSource.cs" />
+    <Compile Include="Il2CppRewired\UnknownControllerHat.cs" />
+    <Compile Include="Il2CppRewired\UpdateControllerInfoEventArgs.cs" />
+    <Compile Include="Il2CppRewired\UpdateLoopDataSet.cs" />
+    <Compile Include="Il2CppRewired\UpdateLoopType.cs" />
+    <Compile Include="Il2CppRewired\Utils\ArrayTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\Attributes\BitmaskAttribute.cs" />
+    <Compile Include="Il2CppRewired\Utils\Attributes\BitmaskToggleAttribute.cs" />
+    <Compile Include="Il2CppRewired\Utils\Attributes\FieldRangeAttribute.cs" />
+    <Compile Include="Il2CppRewired\Utils\Attributes\MonoPInvokeCallbackAttribute.cs" />
+    <Compile Include="Il2CppRewired\Utils\Attributes\PreserveAttribute.cs" />
+    <Compile Include="Il2CppRewired\Utils\Attributes\SerializationTypeAttribute.cs" />
+    <Compile Include="Il2CppRewired\Utils\BitTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\CodeHelper.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\ADictionary.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\AList.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\ExpandableArray_DataContainer.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\Float2x.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\Float3x.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\Float4x.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\GetSetValue.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\IndexedDictionary.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\IntPadding.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\IntPtrWrapper.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\IntRect.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\IntVector2.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\IntVector3.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\IntVector4.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\KeyedGetSetValueStore.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\NativeBuffer.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\NativeMemoryBlock.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\NativeRingBuffer.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\ReadOnlyArrayStruct.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\RingBuffer.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\ScreenRect.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\SerializableULong.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\SerializedObject.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Data\TypeWrapper.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\SerializedMethod.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\DualRingReportBuffer.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\DualThreadLowLevelInputEventQueue.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\EnumNameValueCache.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\FrameTimer.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\IObjectPool.2.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\IObjectPool.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\IPoolableObject_Internal.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\LockedObject.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\Locker.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\LowLevelInputEventQueue.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\ObjectInstanceTracker.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\ObjectPool.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\SetAndRestoreVar.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\Stopwatch.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\StopwatchBase.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\ThreadedMessageQueue.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\ThreadedRingReportBuffer.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\ThreadHelper.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\Timer.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\TimerAbs.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\TimerRealTime.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\UnityStopwatch.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\ValueWatcher.2.cs" />
+    <Compile Include="Il2CppRewired\Utils\Classes\Utility\ValueWatcher.cs" />
+    <Compile Include="Il2CppRewired\Utils\CollectionTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\EmptyObjects.cs" />
+    <Compile Include="Il2CppRewired\Utils\EnumTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\EnumValueHelper.cs" />
+    <Compile Include="Il2CppRewired\Utils\EqualityComparerNoAlloc.cs" />
+    <Compile Include="Il2CppRewired\Utils\ExtensionMethods.cs" />
+    <Compile Include="Il2CppRewired\Utils\Factory.cs" />
+    <Compile Include="Il2CppRewired\Utils\GUITools.cs" />
+    <Compile Include="Il2CppRewired\Utils\InputTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IAddKeyValue.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IAddValue.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IDeepCloneable.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IExportToJson.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IExportToXml.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IExternalInputManager.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IExternalTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IGetSetValue.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IGetValue.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IKeyedData.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IReadOnlyList.2.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IReadOnlyList.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\IRegistrar.cs" />
+    <Compile Include="Il2CppRewired\Utils\Interfaces\ISetValue.cs" />
+    <Compile Include="Il2CppRewired\Utils\Libraries\TinyJson\DoNotSerializeAttribute.cs" />
+    <Compile Include="Il2CppRewired\Utils\Libraries\TinyJson\JsonParser.cs" />
+    <Compile Include="Il2CppRewired\Utils\Libraries\TinyJson\JsonTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\Libraries\TinyJson\JsonWriter.cs" />
+    <Compile Include="Il2CppRewired\Utils\Libraries\TinyJson\SerializeAttribute.cs" />
+    <Compile Include="Il2CppRewired\Utils\ListTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\MathTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\MiscTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\NativeTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\PlatformTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\ReflectionTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\SafeAction.2.cs" />
+    <Compile Include="Il2CppRewired\Utils\SafeAction.3.cs" />
+    <Compile Include="Il2CppRewired\Utils\SafeAction.cs" />
+    <Compile Include="Il2CppRewired\Utils\SafeDelegate.2.cs" />
+    <Compile Include="Il2CppRewired\Utils\SafeDelegate.cs" />
+    <Compile Include="Il2CppRewired\Utils\SafeFunc.cs" />
+    <Compile Include="Il2CppRewired\Utils\SafePredicate.cs" />
+    <Compile Include="Il2CppRewired\Utils\SerializationTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\StringTools.cs" />
+    <Compile Include="Il2CppRewired\Utils\SystemInfo.cs" />
+    <Compile Include="Il2CppRewired\Utils\TempListPool.cs" />
+    <Compile Include="Il2CppRewired\Utils\UI\PositionType.cs" />
+    <Compile Include="Il2CppRewired\Utils\UnityTools.cs" />
+    <Compile Include="Il2Cpp\aAHfSpuAUxSHSmxpymNKoUktass.cs" />
+    <Compile Include="Il2Cpp\AJjakXkmdzqMjZnFGVPEHxLyyAq.cs" />
+    <Compile Include="Il2Cpp\AkPWZxJICqXISLazpKqWsMZEWa.cs" />
+    <Compile Include="Il2Cpp\aNPdaISMCvynnPwcodqlFypnVUq.cs" />
+    <Compile Include="Il2Cpp\asDNYvxUPMYbemtNBzryLCzmOEt.cs" />
+    <Compile Include="Il2Cpp\atbfHZhdkvsWMbmdayQwVztEARh.cs" />
+    <Compile Include="Il2Cpp\AYsdKyoSdUZuLebsxarNdnEZZsG.cs" />
+    <Compile Include="Il2Cpp\bazrnhERojvwLxyGyynsUsUakVt.cs" />
+    <Compile Include="Il2Cpp\ClwaPQJKMCronUBGOVUWbjaHPcx.cs" />
+    <Compile Include="Il2Cpp\eBBRkIhAZWpZdimBEAZOlqwcKNY.cs" />
+    <Compile Include="Il2Cpp\FFMigeLIgyxiuHpIhQJAThItrdL.cs" />
+    <Compile Include="Il2Cpp\FTRbVIakQDtduAElaDZqEnVrNpq.cs" />
+    <Compile Include="Il2Cpp\gHvazwhmtWIDaLvHbvFUHfgSHxAh.cs" />
+    <Compile Include="Il2Cpp\GPleNSRyMITftFHQfeXocMLFaCN.cs" />
+    <Compile Include="Il2Cpp\HiLArIndXmACUwyNIFNRxcoTmRv.cs" />
+    <Compile Include="Il2Cpp\HnrCEIcuykEHOPJEVhBbQFvSKCRl.cs" />
+    <Compile Include="Il2Cpp\hreiwttkoBQlMwGESjPdQGifGUW.cs" />
+    <Compile Include="Il2Cpp\hVtMGOBnmvjLYbjWnfQcarSjsIj.cs" />
+    <Compile Include="Il2Cpp\IBbBEsdQWzLjCPdKGqxZDOdxZdy.cs" />
+    <Compile Include="Il2Cpp\IJTSoxwjbODIhIiVkOGJcBnCxmom.cs" />
+    <Compile Include="Il2Cpp\ilRJkluDUSPPcKRydmoYznciuvi.cs" />
+    <Compile Include="Il2Cpp\IUVBGDbJgeweTeWtOuQpVNVoIOK.cs" />
+    <Compile Include="Il2Cpp\iwLceqiZcBBQsTTXpxVjKSjbzVDI.cs" />
+    <Compile Include="Il2Cpp\iXbdpOFJbbeQkhmiDbeFyVakCgt.cs" />
+    <Compile Include="Il2Cpp\jfFDlPfrqkYtRfskafICJAZSWFM.cs" />
+    <Compile Include="Il2Cpp\JuWdVmrYhDjDMoIxmEvznniBSmG.cs" />
+    <Compile Include="Il2Cpp\JVIULDfmFCbsUVczhmaDiWrecEt.cs" />
+    <Compile Include="Il2Cpp\kgncNWcNbfBVFhzpohScGdtYSwh.cs" />
+    <Compile Include="Il2Cpp\KIUVAlhLeBvvjCbpsifvjuNIdnzp.cs" />
+    <Compile Include="Il2Cpp\KmMahgaJIXFpYndAmpoiiEdvnKYr.cs" />
+    <Compile Include="Il2Cpp\kmRUwlUPdxkBYAIjfDmUhHgmIqam.cs" />
+    <Compile Include="Il2Cpp\KvoUfugIwhcwahzzrMvxdzIrKNRD.cs" />
+    <Compile Include="Il2Cpp\KwmYhtfYYeGiObzzBDCqcdIyOjt.cs" />
+    <Compile Include="Il2Cpp\LjRrIlrXFxtzXVheOVfGqEbjFxq.cs" />
+    <Compile Include="Il2Cpp\lquWCEEbyIEgNbyPvPhzZBmqVqG.cs" />
+    <Compile Include="Il2Cpp\lqUxvTqUDCEunUFzebBQHAJUPxL.cs" />
+    <Compile Include="Il2Cpp\LszZJcXAUVFoIYwdWvyHxdhHJMY.cs" />
+    <Compile Include="Il2Cpp\LZAGShwyCOcuMySPQgkZmHCHhcQE.cs" />
+    <Compile Include="Il2Cpp\MAhEpNnfHVJXeDzbLwATgncxHhBK.cs" />
+    <Compile Include="Il2Cpp\mBcWSNovoUgcdqEUBwMcchhGLQG.cs" />
+    <Compile Include="Il2Cpp\naafxPCbHvrvWdFunUnFYqipUsg.cs" />
+    <Compile Include="Il2Cpp\nbitITwLfxvyGfEeiIKFgElqDml.cs" />
+    <Compile Include="Il2Cpp\NDybjqdzdZiFLEjRMkaOJxrCDLlt.cs" />
+    <Compile Include="Il2Cpp\ObjectCompilerGeneratedPrivateObObObObObObUnique.cs" />
+    <Compile Include="Il2Cpp\oijKuMvQnsKBSpSUdrqpXWZhpfB.cs" />
+    <Compile Include="Il2Cpp\OPQOGNATZEGnQFmFYfKQxgiidNcD.cs" />
+    <Compile Include="Il2Cpp\paNYZVZdGkqIiKTEaBSIfSDRqvP.cs" />
+    <Compile Include="Il2Cpp\pDfXTVLuKlAQHTvxXKzEpqnfDvO.cs" />
+    <Compile Include="Il2Cpp\PVcYeGXldMtlqwuhcuAENsHbDlle.cs" />
+    <Compile Include="Il2Cpp\qezjWCiLfYUtcKTfXvPcITETCGwT.cs" />
+    <Compile Include="Il2Cpp\QkheapgYYuIvlBfaWwaRqHuMZnDm.cs" />
+    <Compile Include="Il2Cpp\qrbDMZIYGhOnwlEMQltUEAcdwWVA.cs" />
+    <Compile Include="Il2Cpp\rBapAxSjeCWOiOHyzennMIRNCHfj.cs" />
+    <Compile Include="Il2Cpp\RmkKbXLVWhQDRVDOZGQkJwPzlBQ.cs" />
+    <Compile Include="Il2Cpp\rPqDGiaNrBrSNDKPFWLaHekLakh.cs" />
+    <Compile Include="Il2Cpp\RSlfnkpOdGXUGRIVtmWBVXkOPc.cs" />
+    <Compile Include="Il2Cpp\RuunjAQIDUiaWMnNcKrOKFawsvf.cs" />
+    <Compile Include="Il2Cpp\SDkFJbJoObYlXcDXpYlEIQQSkvlx.cs" />
+    <Compile Include="Il2Cpp\sEOzomODSjEurbjdzPjXIZfQXpXp.cs" />
+    <Compile Include="Il2Cpp\sFaEDZPORevmmEbtxDOukwTDPQd.cs" />
+    <Compile Include="Il2Cpp\SmFEjsKAxnrEqwtZRTkEgBzBNWG.cs" />
+    <Compile Include="Il2Cpp\SvugOvjlbVydmbyacNEWfPrEqhQ.cs" />
+    <Compile Include="Il2Cpp\tPZKHwyHlbBEhLkvPMkTIbgBrHF.cs" />
+    <Compile Include="Il2Cpp\UFJScZOngJyUgnoKbGUxlMXpnsf.cs" />
+    <Compile Include="Il2Cpp\UfmoTeVmnWmHSyYVCaXfkFsFMQw.cs" />
+    <Compile Include="Il2Cpp\uLBffQmjZVJkNwKRVfvGHggdqhKj.cs" />
+    <Compile Include="Il2Cpp\VcgaqAPARubixeQXnHQhlksdPyqf.cs" />
+    <Compile Include="Il2Cpp\VOCeJBHEouKqhenhfzDnzcBqivIv.cs" />
+    <Compile Include="Il2Cpp\vWZCubFIQxJziOnYWBvfXxEQfVKb.cs" />
+    <Compile Include="Il2Cpp\wgEaTnaIxVctbIjaGKJfHFRkzCWd.cs" />
+    <Compile Include="Il2Cpp\WOJZxAYcxyhUycQwuNJyCgNLwPK.cs" />
+    <Compile Include="Il2Cpp\xqqHVKAZEFteBAmUxBUCrjXQySW.cs" />
+    <Compile Include="Il2Cpp\ZDhhuZcEwSKUWbwvNBtWgfXUgsr.cs" />
+    <Compile Include="Il2Cpp\ZgRDTijhtRlqiGNmMEbDYFdnvgEO.cs" />
+    <Compile Include="Il2Cpp\ZpmijvYLlfoeyrwRFxAigEqvAXD.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

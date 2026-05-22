@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8051FA5-EB64-4302-9D56-58F0A4941499}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Il2CppRewired_Windows</RootNamespace>
+    <AssemblyName>Il2CppRewired_Windows</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Il2CppInterop.Common" />
+    <Reference Include="Il2CppInterop.Runtime" />
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppRewired_Core">
+      <HintPath>..\..\..\Il2CppRewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Il2CppRewired\InputManagers\Initializer.cs" />
+    <Compile Include="Il2CppRewired\Libraries\SharpDX\DirectInput\DeviceType.cs" />
+    <Compile Include="Il2CppRewired\Libraries\SharpDX\RawInput\ForwardRawInputEventsToUnityDelegate.cs" />
+    <Compile Include="Il2CppRewired\Libraries\SharpDX\XInput\DeviceType.cs" />
+    <Compile Include="Il2CppRewired\Utils\Platforms\Windows\Main.cs" />
+    <Compile Include="Il2CppRewired\Windows\RawInput\DeviceType.cs" />
+    <Compile Include="Il2Cpp\aaDwTSPHBOnqFSGsWdTdBUAWwCW.cs" />
+    <Compile Include="Il2Cpp\aaejOkSUWPuhKNJfMinvGWSYPto.cs" />
+    <Compile Include="Il2Cpp\aebqsBAEhVilJeqHZosRvGGRxlb.cs" />
+    <Compile Include="Il2Cpp\AFccUpCurZPKhWkjrYKYCsfXcGvS.cs" />
+    <Compile Include="Il2Cpp\AQgQWchRxTukklluabhiyqneMCb.cs" />
+    <Compile Include="Il2Cpp\artUImvIOrpFrTyQJmPOKmHEToP.cs" />
+    <Compile Include="Il2Cpp\AVeaYqUOXThIGxtEghHOCCVKouO.cs" />
+    <Compile Include="Il2Cpp\awBsbogjskQqsQLAHCuxhEOaYIQP.cs" />
+    <Compile Include="Il2Cpp\aYmdvUMWfiTotefRTAocHDwHJra.cs" />
+    <Compile Include="Il2Cpp\brqUeatcEFJXZoQxeNWlLbeLjiW.cs" />
+    <Compile Include="Il2Cpp\BTzOedTRRSIwlwRjmNMTQfNsoPZ.cs" />
+    <Compile Include="Il2Cpp\bVNKJJoVnmNFAMCTowqchPzXXGf.cs" />
+    <Compile Include="Il2Cpp\BzFWAOxDoNjIzEKiNQDRSTVSwobl.cs" />
+    <Compile Include="Il2Cpp\ceaPFiyaFtbcapHccnOIcnSzwGU.cs" />
+    <Compile Include="Il2Cpp\cQEiOavfyUZGsPkTnfHgqeNItW.cs" />
+    <Compile Include="Il2Cpp\CySOpMjLaScnvFMniYdsFBlkDepQ.cs" />
+    <Compile Include="Il2Cpp\DMMGgLblCGPuiOGzYlOxiKOJqkqD.cs" />
+    <Compile Include="Il2Cpp\DpAxezsdgkjWDmRgONjVLDYvZXp.cs" />
+    <Compile Include="Il2Cpp\dpJvCtFTabtCrNgGDoBMzTmCqAo.cs" />
+    <Compile Include="Il2Cpp\dSzfxKtjBwygxJuWMIhojwqaDkD.cs" />
+    <Compile Include="Il2Cpp\dycbHlenVSsSOEisCysNhkGEdoyQ.cs" />
+    <Compile Include="Il2Cpp\dYiCpgFrgoeLrFkYtKMRelkCqnEt.cs" />
+    <Compile Include="Il2Cpp\DYOOuoMggQrkVDjRDbfzhdllcuf.cs" />
+    <Compile Include="Il2Cpp\EasRdIRBXAqiQabQurBpwEyKSgi.cs" />
+    <Compile Include="Il2Cpp\EbghLbyIRbjrPZBIYCJCcclEKJPc.cs" />
+    <Compile Include="Il2Cpp\ecUajXgewdyNUwOTVOwhggfjbSLn.cs" />
+    <Compile Include="Il2Cpp\eIyeVBCjFJBhleTrifysRisFiOKh.cs" />
+    <Compile Include="Il2Cpp\eLARyDrWrNjUOorcLJFSItpQIEU.cs" />
+    <Compile Include="Il2Cpp\eSLGEJQTnpeuiHPqAWOfRsMzzzj.cs" />
+    <Compile Include="Il2Cpp\EXJFuhZQnIgikJlcJdXgnXsepAV.cs" />
+    <Compile Include="Il2Cpp\EZcxDHtqyhZmTtlDcXNWIpbdjhHk.cs" />
+    <Compile Include="Il2Cpp\FAeegiJxoxoPtIfbGBlpdCzBPudS.cs" />
+    <Compile Include="Il2Cpp\falWpvahurRdrGNQEnpWJSwPdsf.cs" />
+    <Compile Include="Il2Cpp\FePZbGGRFYvfHcnPWWTRllQFEZUc.cs" />
+    <Compile Include="Il2Cpp\fJoHaeFYWaeWrjQKwpEWdeBDzdn.cs" />
+    <Compile Include="Il2Cpp\fjuxweEUcYoOYDCAfnmWqXlPIMl.cs" />
+    <Compile Include="Il2Cpp\FLIeZXpuybzlItUBtHsgxnOOzuO.cs" />
+    <Compile Include="Il2Cpp\FLsxMzuinNHHRkzNRTOHUgiEsdzR.cs" />
+    <Compile Include="Il2Cpp\fMzTozWFAMOyRwCVQfeSZVpSeQK.cs" />
+    <Compile Include="Il2Cpp\fTbGsBlOUWVpmZCGXRgjLQpdDLM.cs" />
+    <Compile Include="Il2Cpp\fXtLpzdUTwJBisTOInsoYmnYJUy.cs" />
+    <Compile Include="Il2Cpp\fyNgLphgWCNBUajLkrqiVvyEBvW.cs" />
+    <Compile Include="Il2Cpp\GFkUdsWyTmBTmquJwdfcfvqwicu.cs" />
+    <Compile Include="Il2Cpp\gOuqlGHFYvGtHnazBUEWnxzcahb.cs" />
+    <Compile Include="Il2Cpp\haCdRszKJwijJaoAwxPlAeEzEJwj.cs" />
+    <Compile Include="Il2Cpp\HDCgQLJhrUSkhBFcaZJNIiGfjQq.cs" />
+    <Compile Include="Il2Cpp\hLEfxPoqoYFTiUbyxBmybYHCvIzw.cs" />
+    <Compile Include="Il2Cpp\htAwVZkIzkPeJoMHQZBWGOsyKCZ.cs" />
+    <Compile Include="Il2Cpp\hUsuCQHNXLukofFrZgGIQVWDbxx.cs" />
+    <Compile Include="Il2Cpp\hUuvNqMKCAymAWjrtRbddBJRQKi.cs" />
+    <Compile Include="Il2Cpp\ICCydxFWlxZbfDHrYHCDqviNqzJ.cs" />
+    <Compile Include="Il2Cpp\IFqrtgNHvPDLIJpEYtrbPlgWjXkG.cs" />
+    <Compile Include="Il2Cpp\ikpInJKFiyCGmxYwJoqRmHEoEBmJ.cs" />
+    <Compile Include="Il2Cpp\iNjMIQBOyLGqFtxSspcaasZLAcC.cs" />
+    <Compile Include="Il2Cpp\irhcCRoLlXafZDetWRKVUhtdKhI.cs" />
+    <Compile Include="Il2Cpp\irLJsGAuvjuboBgiixlovnHWhgM.cs" />
+    <Compile Include="Il2Cpp\iTESAbVlyVqPiklNhlTgHuEzGhb.cs" />
+    <Compile Include="Il2Cpp\JjJowGodIUYhWlYxiUPqeQWYZUn.cs" />
+    <Compile Include="Il2Cpp\JjUCNcRBLmjYyTRNlyApfRhXwqf.cs" />
+    <Compile Include="Il2Cpp\jJZbMyIJWTZZMItmQAULFXdMRbx.cs" />
+    <Compile Include="Il2Cpp\JNXGqljpfwdWaoUuBSRgIkdpAsC.cs" />
+    <Compile Include="Il2Cpp\JqoLnLYjuDVOHLfNJTiRIkjDYXh.cs" />
+    <Compile Include="Il2Cpp\juujpSTZXnLBESFIGFBEKibivGj.cs" />
+    <Compile Include="Il2Cpp\jWdsthDVMnNKOPUhYZRUzmnAycZ.cs" />
+    <Compile Include="Il2Cpp\kBcZVvRbRQcScdcihLyLgHjiawZg.cs" />
+    <Compile Include="Il2Cpp\kEDaMweXNnlnRSHpXSgfNrxoaDl.cs" />
+    <Compile Include="Il2Cpp\KIcOPpkymhuLKgWNVmUvApNKmVc.cs" />
+    <Compile Include="Il2Cpp\ksMJzlFGBcALQIHdgeuVTsIViKj.cs" />
+    <Compile Include="Il2Cpp\kSxyOZmmwwWWvbNbQDBfHzTOMgP.cs" />
+    <Compile Include="Il2Cpp\kVOsIPYhfWxVThMHLjCqLnIotv.cs" />
+    <Compile Include="Il2Cpp\kvWKVaeBQXddezXSDwPndoljmlq.cs" />
+    <Compile Include="Il2Cpp\kxBbpMJXMlaVXrnIjzGjUYKOBntl.cs" />
+    <Compile Include="Il2Cpp\KZieBybqmiiADpPXAGbyymiIBssV.cs" />
+    <Compile Include="Il2Cpp\KzuEtqIOdgvlSvAktZsjQEziSizO.cs" />
+    <Compile Include="Il2Cpp\lcrJrztmehLPImGHGmaApDgmCTO.cs" />
+    <Compile Include="Il2Cpp\lhEJGOxwkJfmYflajRgoXtbCkTe.cs" />
+    <Compile Include="Il2Cpp\LItHovhWvIpfcUAQclSHTAKFBNI.cs" />
+    <Compile Include="Il2Cpp\lroGACezOLzKqbgZYEXIOMjTNODX.cs" />
+    <Compile Include="Il2Cpp\LtUgAcHeLskwANVoxlidviSCjmwf.cs" />
+    <Compile Include="Il2Cpp\lTYDyFJBhzGCRcmOcRRJrzdwCPST.cs" />
+    <Compile Include="Il2Cpp\lWGqplCPfeqSqYQMnGJhAaJXrqX.cs" />
+    <Compile Include="Il2Cpp\lYzRVWAYwwjqOQjIKypoKfLheCI.cs" />
+    <Compile Include="Il2Cpp\MaEgfvevdVIfQCtrIJMLQCQzDLz.cs" />
+    <Compile Include="Il2Cpp\mCzvyEsBirboEZOJNKoBjZiKqPP.cs" />
+    <Compile Include="Il2Cpp\mDJovJAZsbeHXpUVmkzAsBrYUix.cs" />
+    <Compile Include="Il2Cpp\MDKewUWOKygoknokDLtsRMNXyER.cs" />
+    <Compile Include="Il2Cpp\mGofRxbHIBsabtivdmzYdEymAwuQ.cs" />
+    <Compile Include="Il2Cpp\MixEZdcyOILrKdCCWuLKJJMVEyRk.cs" />
+    <Compile Include="Il2Cpp\mmEWxTWDqTvsINjaqHdvbsWTuNK.cs" />
+    <Compile Include="Il2Cpp\mNJaRTfztSGiDMCnErIIwrVEafeA.cs" />
+    <Compile Include="Il2Cpp\MvkDuwrMmqFkLvgWkMbqLpCRQqV.cs" />
+    <Compile Include="Il2Cpp\NCAKlOuHHtmlQFmgNIReWrsmixC.cs" />
+    <Compile Include="Il2Cpp\ncJTfmRIxvFMySnAYgwAdGrFIXc.cs" />
+    <Compile Include="Il2Cpp\ngCibaaBZgwtrGtNcLMaYjKwcLs.cs" />
+    <Compile Include="Il2Cpp\nlHBfEhwWokHQMlIBSrUwShqjlu.cs" />
+    <Compile Include="Il2Cpp\NQZqWhwArtGUrZjfYZnhpaIGwOP.cs" />
+    <Compile Include="Il2Cpp\nrQuemmcDjvSzBWorJMorcpRSZ.cs" />
+    <Compile Include="Il2Cpp\NsKeykMDuMUNSYiDwNrFLznLmEI.cs" />
+    <Compile Include="Il2Cpp\nvKoHpvdINblgHsNeYuJqDDrmvCd.cs" />
+    <Compile Include="Il2Cpp\nXcGDSApXvLsTpOtLBfnoUIwJoFU.cs" />
+    <Compile Include="Il2Cpp\ObjectCompilerGeneratedPrivateObUnique.cs" />
+    <Compile Include="Il2Cpp\oCjFzpnXTLSCFnKfsCmFeJzuaMUb.cs" />
+    <Compile Include="Il2Cpp\OefprQKWpTLnfZkIqjdmEqWMuMHf.cs" />
+    <Compile Include="Il2Cpp\OnrdOCJdSxcEPsNEEEtkRsmgGPE.cs" />
+    <Compile Include="Il2Cpp\OpYPcdbiySkrEUWYBVbTkIazvMW.cs" />
+    <Compile Include="Il2Cpp\PjgTGhAZWmBlKOcMVGzmNgaSARr.cs" />
+    <Compile Include="Il2Cpp\PKKHmfXbWaXQiqvGpwwqTIWRrXa.cs" />
+    <Compile Include="Il2Cpp\PovLSbHEvlyITxkRtYlPhdYiONp.cs" />
+    <Compile Include="Il2Cpp\PqqgyCGjADvvsvNVeBUQfHelVNqO.cs" />
+    <Compile Include="Il2Cpp\QbkumbWqtjFZhTamwiuEmQOBhjO.cs" />
+    <Compile Include="Il2Cpp\QIdBJZYBjDGMCNFsDyeTIPPeVEO.cs" />
+    <Compile Include="Il2Cpp\qjtEurYkUARfWMEXEWTZhRsUvHE.cs" />
+    <Compile Include="Il2Cpp\QlTjyrWQBQrDPDrtRHJxnibBAFB.cs" />
+    <Compile Include="Il2Cpp\qRIuRzShpDsFxjgnExWBONtpHzh.cs" />
+    <Compile Include="Il2Cpp\qtSKvldFCdkkOzxZeGRXPVFJlUZ.cs" />
+    <Compile Include="Il2Cpp\qtwrjJONpfKCHURInubHVWIzKtT.cs" />
+    <Compile Include="Il2Cpp\qUaGqiINTetoMqkycxtnbRGdbPt.cs" />
+    <Compile Include="Il2Cpp\rmPPClnDFhBcUXkYzgsrgwTwELLP.cs" />
+    <Compile Include="Il2Cpp\SAAainQjLdGvwAQMgZkrslyGlQO.cs" />
+    <Compile Include="Il2Cpp\SAqoCegcvKgFgjflCdHMSkxUWCZ.cs" />
+    <Compile Include="Il2Cpp\sddfavAxMwbKSydyEhSFxavOWQu.cs" />
+    <Compile Include="Il2Cpp\SguwiWjBjlvEaNizfUentuJhPsX.cs" />
+    <Compile Include="Il2Cpp\SHFqlqFEjBZJXjmTZmMVPjfHFpP.cs" />
+    <Compile Include="Il2Cpp\SHTUgTGfOFIkCfNZUIneEnHEBjOA.cs" />
+    <Compile Include="Il2Cpp\sJflEcsdyTYshSIDKgZWTEIkwRt.cs" />
+    <Compile Include="Il2Cpp\sjYknhXhXWcXbHkWlisjfjbNJfSA.cs" />
+    <Compile Include="Il2Cpp\SKhJQwGOcNLOsTqZfLfdafqfiae.cs" />
+    <Compile Include="Il2Cpp\SkItpoOYMjOFcKMNuWgEtTzrshu.cs" />
+    <Compile Include="Il2Cpp\SnhrVybmVdNECyImkkRpxnOHrH.cs" />
+    <Compile Include="Il2Cpp\ssWXaXcYaWshESkmAaTmwvHKcdi.cs" />
+    <Compile Include="Il2Cpp\SyqdadfKMUwIVeRUcGMqeshNrthF.cs" />
+    <Compile Include="Il2Cpp\TcbfLsJvNivwNJttbooNtecDtTfB.cs" />
+    <Compile Include="Il2Cpp\TdrAPBUIDOqfyKhFGamLtatkUNr.cs" />
+    <Compile Include="Il2Cpp\TErrgqOOVgbnjOnpRgPGKXEwpWp.cs" />
+    <Compile Include="Il2Cpp\TGAEBsjNxKojTYRKaTmLhtawQmO.cs" />
+    <Compile Include="Il2Cpp\TgrCNFfGLTghFUtYDehIzvBnSryK.cs" />
+    <Compile Include="Il2Cpp\tnLnhpiMrhDXtaULQduOdMTdeaHr.cs" />
+    <Compile Include="Il2Cpp\TxHnvbmwTppikNfVuKSVxRIpqoB.cs" />
+    <Compile Include="Il2Cpp\tzQKWxDhNEWjpkwRtFOXAbdpqPv.cs" />
+    <Compile Include="Il2Cpp\UDRonmQIbhwuVcbmlgzfpmqddNE.cs" />
+    <Compile Include="Il2Cpp\UGSgCiEOJCcfDeSCAzsKERowBwza.cs" />
+    <Compile Include="Il2Cpp\UiNBgGwzevuVTWwnfkmVTeuxTmb.cs" />
+    <Compile Include="Il2Cpp\uljEPIaupspiQLNGpWiUOVnMVbvq.cs" />
+    <Compile Include="Il2Cpp\unJsaRSSgupDSRHTgwYCjZjgfdB.cs" />
+    <Compile Include="Il2Cpp\UvJOuZsEKawwKfFGnFiImLGvPku.cs" />
+    <Compile Include="Il2Cpp\uyFTixrjAkBbKzWDLagKOETGSBF.cs" />
+    <Compile Include="Il2Cpp\vdJHJqfqbyzlsrTISxnDnxSrLwF.cs" />
+    <Compile Include="Il2Cpp\vHtfmZTHEQaxIExiCJsZeMHnGYTJ.cs" />
+    <Compile Include="Il2Cpp\vrkiZGYuNrRXjlZRgDAleOyTGcLd.cs" />
+    <Compile Include="Il2Cpp\VvbZqHkamwSxPmlvskWXVVAVNep.cs" />
+    <Compile Include="Il2Cpp\waGkcKuIAndunNDtpihFrvHWkIO.cs" />
+    <Compile Include="Il2Cpp\wdjYMOpPHSGBIDVuUcIyHVtFoezd.cs" />
+    <Compile Include="Il2Cpp\wFYfCWIgWKIpKeyRcOycjUQQSOf.cs" />
+    <Compile Include="Il2Cpp\WlDAKLevYmmmidOIPybrmKupMYKG.cs" />
+    <Compile Include="Il2Cpp\wNobuidIdmqPxdVsORSDoNbAhlvK.cs" />
+    <Compile Include="Il2Cpp\WPOyThamDxsrbfLsNoTOiGbjxmd.cs" />
+    <Compile Include="Il2Cpp\wqLWDuoakCNGKKVcsMbTwUSkPFn.cs" />
+    <Compile Include="Il2Cpp\wTLPhxUnLsoPeAIQQKuZHNJYLaG.cs" />
+    <Compile Include="Il2Cpp\wxUDHkUUhKDNMEKaSINzTktluWM.cs" />
+    <Compile Include="Il2Cpp\XbCdfHsVWHGzaYTdEBgeKDAaNYvd.cs" />
+    <Compile Include="Il2Cpp\XLdfyFoDEVqcoicVnZxCGNrdgzX.cs" />
+    <Compile Include="Il2Cpp\XsEKCtZaAjxJbgOyOjaAnvVHBtJ.cs" />
+    <Compile Include="Il2Cpp\XYBrgfWDoKhdtTqiEDcfCCbKnIgh.cs" />
+    <Compile Include="Il2Cpp\YNtguSxZuRuPTXbYtiVEHyhoFbr.cs" />
+    <Compile Include="Il2Cpp\ySSfubLWCRDNFUQdCrrwdMgwkJs.cs" />
+    <Compile Include="Il2Cpp\ywcXCwDHBvioOXoUMwhfqIIEDX.cs" />
+    <Compile Include="Il2Cpp\ZcXVgQcPnAsgxXoELmnIFHlJIzV.cs" />
+    <Compile Include="Il2Cpp\ZenEQpAvoowTRRGGuzdylTcwQmcG.cs" />
+    <Compile Include="Il2Cpp\zFDaSsbqXajzeDHNaEtOsKpRUhf.cs" />
+    <Compile Include="Il2Cpp\ZToFWGnBysdxNJlLOGBnNZAVNcl.cs" />
+    <Compile Include="Il2Cpp\ZwbkiqplbwbLOjwaRJvCKuBuhtY.cs" />
+    <Compile Include="Il2Cpp\zXMAWDmsLuIvSUdSWPdkrozLDRG.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

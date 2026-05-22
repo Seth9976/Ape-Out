@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4ED90DCC-0659-456B-AD34-F259DC081DA3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Unity.Postprocessing.Runtime</RootNamespace>
+    <AssemblyName>Unity.Postprocessing.Runtime</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Il2CppInterop.Common" />
+    <Reference Include="Il2CppInterop.Runtime" />
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\..\..\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\..\..\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Il2Cpp\_PrivateImplementationDetails_.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\AmbientOcclusion.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\AmbientOcclusionMode.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\AmbientOcclusionModeParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\AmbientOcclusionQuality.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\AmbientOcclusionQualityParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\AmbientOcclusionRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\AutoExposure.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\AutoExposureRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\Bloom.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\BloomRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\BoolParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ChromaticAberration.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ChromaticAberrationRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ColorBlindnessType.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ColorGrading.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ColorGradingRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ColorParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ColorUtilities.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\DebugOverlay.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\DepthOfField.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\DepthOfFieldRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\DisplayNameAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\Dithering.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\EyeAdaptation.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\EyeAdaptationParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\FastApproximateAntialiasing.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\FloatParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\Fog.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\GradingMode.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\GradingModeParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\Grain.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\GrainRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\HableCurve.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\HaltonSeq.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\HistogramMonitor.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\IAmbientOcclusionMethod.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\IntParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\KernelSize.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\KernelSizeParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\LensDistortion.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\LensDistortionRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\LightMeterMonitor.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\LogHistogram.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\MaxAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\MeshUtilities.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\MinAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\MinMaxAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\Monitor.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\MonitorType.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\MotionBlur.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\MotionBlurRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\MultiScaleVO.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ParameterOverride.2.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ParameterOverride.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessBundle.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessDebug.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessDebugLayer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessEffectRenderer.2.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessEffectRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessEffectSettings.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessEvent.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessEventComparer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessLayer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessManager.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessProfile.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessRenderContext.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessResources.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PostProcessVolume.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PropertySheet.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\PropertySheetFactory.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\RuntimeUtilities.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ScalableAO.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ScreenSpaceReflectionPreset.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ScreenSpaceReflectionPresetParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ScreenSpaceReflectionResolution.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ScreenSpaceReflectionResolutionParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ScreenSpaceReflections.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ScreenSpaceReflectionsRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\ShaderIDs.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\Spline.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\SplineParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\SubpixelMorphologicalAntialiasing.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\TargetPool.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\TemporalAntialiasing.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\TextureFormatUtilities.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\TextureLerper.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\TextureParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\TextureParameterDefault.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\Tonemapper.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\TonemapperParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\TrackballAttribute.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\Vector2Parameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\Vector3Parameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\Vector4Parameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\VectorscopeMonitor.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\Vignette.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\VignetteMode.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\VignetteModeParameter.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\VignetteRenderer.cs" />
+    <Compile Include="UnityEngine\Rendering\PostProcessing\WaveformMonitor.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

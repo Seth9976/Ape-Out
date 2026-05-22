@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8F7DA843-55A6-4BA5-A5AF-87134DF37A93}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Il2CppMono.Security</RootNamespace>
+    <AssemblyName>Il2CppMono.Security</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Il2CppInterop.Common" />
+    <Reference Include="Il2CppInterop.Runtime" />
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\..\..\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Il2CppMono\Math\BigInteger.cs" />
+    <Compile Include="Il2CppMono\Math\Prime\ConfidenceFactor.cs" />
+    <Compile Include="Il2CppMono\Math\Prime\Generator\PrimeGeneratorBase.cs" />
+    <Compile Include="Il2CppMono\Math\Prime\Generator\SequentialSearchPrimeGeneratorBase.cs" />
+    <Compile Include="Il2CppMono\Math\Prime\PrimalityTest.cs" />
+    <Compile Include="Il2CppMono\Math\Prime\PrimalityTests.cs" />
+    <Compile Include="Il2CppMono\Security\ASN1.cs" />
+    <Compile Include="Il2CppMono\Security\ASN1Convert.cs" />
+    <Compile Include="Il2CppMono\Security\BitConverterLE.cs" />
+    <Compile Include="Il2CppMono\Security\Cryptography\CryptoConvert.cs" />
+    <Compile Include="Il2CppMono\Security\Cryptography\MD2.cs" />
+    <Compile Include="Il2CppMono\Security\Cryptography\MD2Managed.cs" />
+    <Compile Include="Il2CppMono\Security\Cryptography\MD4.cs" />
+    <Compile Include="Il2CppMono\Security\Cryptography\MD4Managed.cs" />
+    <Compile Include="Il2CppMono\Security\Cryptography\PKCS1.cs" />
+    <Compile Include="Il2CppMono\Security\Cryptography\PKCS8.cs" />
+    <Compile Include="Il2CppMono\Security\Cryptography\RSAManaged.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\Alert.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\AlertDescription.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\AlertLevel.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\CertificateValidationHelper.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\CipherSuiteCode.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\ICertificateValidator.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\ICertificateValidator2.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\IMonoSslStream.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\MonoLocalCertificateSelectionCallback.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\MonoRemoteCertificateValidationCallback.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\MonoSslPolicyErrors.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\MonoTlsConnectionInfo.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\MonoTlsProvider.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\MonoTlsSettings.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\TlsException.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\TlsProtocols.cs" />
+    <Compile Include="Il2CppMono\Security\Interface\ValidationResult.cs" />
+    <Compile Include="Il2CppMono\Security\PKCS7.cs" />
+    <Compile Include="Il2CppMono\Security\Protocol\Ntlm\ChallengeResponse.cs" />
+    <Compile Include="Il2CppMono\Security\Protocol\Ntlm\ChallengeResponse2.cs" />
+    <Compile Include="Il2CppMono\Security\Protocol\Ntlm\MessageBase.cs" />
+    <Compile Include="Il2CppMono\Security\Protocol\Ntlm\NtlmAuthLevel.cs" />
+    <Compile Include="Il2CppMono\Security\Protocol\Ntlm\NtlmFlags.cs" />
+    <Compile Include="Il2CppMono\Security\Protocol\Ntlm\NtlmSettings.cs" />
+    <Compile Include="Il2CppMono\Security\Protocol\Ntlm\Type1Message.cs" />
+    <Compile Include="Il2CppMono\Security\Protocol\Ntlm\Type2Message.cs" />
+    <Compile Include="Il2CppMono\Security\Protocol\Ntlm\Type3Message.cs" />
+    <Compile Include="Il2CppMono\Security\X509\PKCS12.cs" />
+    <Compile Include="Il2CppMono\Security\X509\SafeBag.cs" />
+    <Compile Include="Il2CppMono\Security\X509\X501.cs" />
+    <Compile Include="Il2CppMono\Security\X509\X509Certificate.cs" />
+    <Compile Include="Il2CppMono\Security\X509\X509CertificateCollection.cs" />
+    <Compile Include="Il2CppMono\Security\X509\X509Extension.cs" />
+    <Compile Include="Il2CppMono\Security\X509\X509ExtensionCollection.cs" />
+    <Compile Include="Il2CppMono\Security\X509\X509Store.cs" />
+    <Compile Include="Il2Cpp\Locale.cs" />
+    <Compile Include="Il2Cpp\_PrivateImplementationDetails_.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

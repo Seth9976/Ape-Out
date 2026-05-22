@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{917EF69F-CBB4-4EC1-85C1-37E251B5FD7F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Unity.TextMeshPro</RootNamespace>
+    <AssemblyName>Unity.TextMeshPro</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Il2CppInterop.Common" />
+    <Reference Include="Il2CppInterop.Runtime" />
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\..\..\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\..\..\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>..\..\..\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Il2CppTMPro\AtlasPopulationMode.cs" />
+    <Compile Include="Il2CppTMPro\CaretInfo.cs" />
+    <Compile Include="Il2CppTMPro\CaretPosition.cs" />
+    <Compile Include="Il2CppTMPro\CodePoint.cs" />
+    <Compile Include="Il2CppTMPro\ColorMode.cs" />
+    <Compile Include="Il2CppTMPro\ColorTween.cs" />
+    <Compile Include="Il2CppTMPro\Compute_DistanceTransform_EventTypes.cs" />
+    <Compile Include="Il2CppTMPro\Compute_DT_EventArgs.cs" />
+    <Compile Include="Il2CppTMPro\Extents.cs" />
+    <Compile Include="Il2CppTMPro\FaceInfo_Legacy.cs" />
+    <Compile Include="Il2CppTMPro\FastAction.2.cs" />
+    <Compile Include="Il2CppTMPro\FastAction.3.cs" />
+    <Compile Include="Il2CppTMPro\FastAction.4.cs" />
+    <Compile Include="Il2CppTMPro\FastAction.cs" />
+    <Compile Include="Il2CppTMPro\FloatTween.cs" />
+    <Compile Include="Il2CppTMPro\FontAssetCreationSettings.cs" />
+    <Compile Include="Il2CppTMPro\FontFeatureLookupFlags.cs" />
+    <Compile Include="Il2CppTMPro\FontStyles.cs" />
+    <Compile Include="Il2CppTMPro\FontWeight.cs" />
+    <Compile Include="Il2CppTMPro\GlyphPairKey.cs" />
+    <Compile Include="Il2CppTMPro\GlyphValueRecord_Legacy.cs" />
+    <Compile Include="Il2CppTMPro\HighlightState.cs" />
+    <Compile Include="Il2CppTMPro\HorizontalAlignmentOptions.cs" />
+    <Compile Include="Il2CppTMPro\ITextElement.cs" />
+    <Compile Include="Il2CppTMPro\ITextPreprocessor.cs" />
+    <Compile Include="Il2CppTMPro\ITweenValue.cs" />
+    <Compile Include="Il2CppTMPro\KerningPair.cs" />
+    <Compile Include="Il2CppTMPro\KerningPairKey.cs" />
+    <Compile Include="Il2CppTMPro\KerningTable.cs" />
+    <Compile Include="Il2CppTMPro\MarkupTag.cs" />
+    <Compile Include="Il2CppTMPro\MaskingOffsetMode.cs" />
+    <Compile Include="Il2CppTMPro\MaskingTypes.cs" />
+    <Compile Include="Il2CppTMPro\MaterialReference.cs" />
+    <Compile Include="Il2CppTMPro\MaterialReferenceManager.cs" />
+    <Compile Include="Il2CppTMPro\Mesh_Extents.cs" />
+    <Compile Include="Il2CppTMPro\RichTextTagAttribute.cs" />
+    <Compile Include="Il2CppTMPro\SetPropertyUtility.cs" />
+    <Compile Include="Il2CppTMPro\ShaderUtilities.cs" />
+    <Compile Include="Il2CppTMPro\SpriteAssetUtilities\SpriteAssetImportFormats.cs" />
+    <Compile Include="Il2CppTMPro\SpriteAssetUtilities\TexturePacker_JsonArray.cs" />
+    <Compile Include="Il2CppTMPro\TagAttribute.cs" />
+    <Compile Include="Il2CppTMPro\TagUnitType.cs" />
+    <Compile Include="Il2CppTMPro\TagValueType.cs" />
+    <Compile Include="Il2CppTMPro\TextAlignmentOptions.cs" />
+    <Compile Include="Il2CppTMPro\TextContainer.cs" />
+    <Compile Include="Il2CppTMPro\TextContainerAnchors.cs" />
+    <Compile Include="Il2CppTMPro\TextElementType.cs" />
+    <Compile Include="Il2CppTMPro\TextMeshPro.cs" />
+    <Compile Include="Il2CppTMPro\TextMeshProUGUI.cs" />
+    <Compile Include="Il2CppTMPro\TextOverflowModes.cs" />
+    <Compile Include="Il2CppTMPro\TextRenderFlags.cs" />
+    <Compile Include="Il2CppTMPro\TextureMappingOptions.cs" />
+    <Compile Include="Il2CppTMPro\TMPro_EventManager.cs" />
+    <Compile Include="Il2CppTMPro\TMPro_ExtensionMethods.cs" />
+    <Compile Include="Il2CppTMPro\TMP_Asset.cs" />
+    <Compile Include="Il2CppTMPro\TMP_Character.cs" />
+    <Compile Include="Il2CppTMPro\TMP_CharacterInfo.cs" />
+    <Compile Include="Il2CppTMPro\TMP_ColorGradient.cs" />
+    <Compile Include="Il2CppTMPro\TMP_Compatibility.cs" />
+    <Compile Include="Il2CppTMPro\TMP_DefaultControls.cs" />
+    <Compile Include="Il2CppTMPro\TMP_Dropdown.cs" />
+    <Compile Include="Il2CppTMPro\TMP_FontAsset.cs" />
+    <Compile Include="Il2CppTMPro\TMP_FontAssetUtilities.cs" />
+    <Compile Include="Il2CppTMPro\TMP_FontFeatureTable.cs" />
+    <Compile Include="Il2CppTMPro\TMP_FontStyleStack.cs" />
+    <Compile Include="Il2CppTMPro\TMP_FontUtilities.cs" />
+    <Compile Include="Il2CppTMPro\TMP_FontWeightPair.cs" />
+    <Compile Include="Il2CppTMPro\TMP_Glyph.cs" />
+    <Compile Include="Il2CppTMPro\TMP_GlyphAdjustmentRecord.cs" />
+    <Compile Include="Il2CppTMPro\TMP_GlyphPairAdjustmentRecord.cs" />
+    <Compile Include="Il2CppTMPro\TMP_GlyphValueRecord.cs" />
+    <Compile Include="Il2CppTMPro\TMP_InputField.cs" />
+    <Compile Include="Il2CppTMPro\TMP_InputValidator.cs" />
+    <Compile Include="Il2CppTMPro\TMP_LineInfo.cs" />
+    <Compile Include="Il2CppTMPro\TMP_LinkInfo.cs" />
+    <Compile Include="Il2CppTMPro\TMP_ListPool.cs" />
+    <Compile Include="Il2CppTMPro\TMP_MaterialManager.cs" />
+    <Compile Include="Il2CppTMPro\TMP_MaterialReference.cs" />
+    <Compile Include="Il2CppTMPro\TMP_Math.cs" />
+    <Compile Include="Il2CppTMPro\TMP_MeshInfo.cs" />
+    <Compile Include="Il2CppTMPro\TMP_ObjectPool.cs" />
+    <Compile Include="Il2CppTMPro\TMP_Offset.cs" />
+    <Compile Include="Il2CppTMPro\TMP_PageInfo.cs" />
+    <Compile Include="Il2CppTMPro\TMP_ResourceManager.cs" />
+    <Compile Include="Il2CppTMPro\TMP_ScrollbarEventHandler.cs" />
+    <Compile Include="Il2CppTMPro\TMP_SelectionCaret.cs" />
+    <Compile Include="Il2CppTMPro\TMP_Settings.cs" />
+    <Compile Include="Il2CppTMPro\TMP_Sprite.cs" />
+    <Compile Include="Il2CppTMPro\TMP_SpriteAnimator.cs" />
+    <Compile Include="Il2CppTMPro\TMP_SpriteAsset.cs" />
+    <Compile Include="Il2CppTMPro\TMP_SpriteCharacter.cs" />
+    <Compile Include="Il2CppTMPro\TMP_SpriteGlyph.cs" />
+    <Compile Include="Il2CppTMPro\TMP_SpriteInfo.cs" />
+    <Compile Include="Il2CppTMPro\TMP_Style.cs" />
+    <Compile Include="Il2CppTMPro\TMP_StyleSheet.cs" />
+    <Compile Include="Il2CppTMPro\TMP_SubMesh.cs" />
+    <Compile Include="Il2CppTMPro\TMP_SubMeshUI.cs" />
+    <Compile Include="Il2CppTMPro\TMP_Text.cs" />
+    <Compile Include="Il2CppTMPro\TMP_TextElement.cs" />
+    <Compile Include="Il2CppTMPro\TMP_TextElementType.cs" />
+    <Compile Include="Il2CppTMPro\TMP_TextElement_Legacy.cs" />
+    <Compile Include="Il2CppTMPro\TMP_TextInfo.cs" />
+    <Compile Include="Il2CppTMPro\TMP_TextParsingUtilities.cs" />
+    <Compile Include="Il2CppTMPro\TMP_TextProcessingStack.cs" />
+    <Compile Include="Il2CppTMPro\TMP_TextUtilities.cs" />
+    <Compile Include="Il2CppTMPro\TMP_UpdateManager.cs" />
+    <Compile Include="Il2CppTMPro\TMP_UpdateRegistry.cs" />
+    <Compile Include="Il2CppTMPro\TMP_Vertex.cs" />
+    <Compile Include="Il2CppTMPro\TMP_VertexDataUpdateFlags.cs" />
+    <Compile Include="Il2CppTMPro\TMP_WordInfo.cs" />
+    <Compile Include="Il2CppTMPro\TweenRunner.cs" />
+    <Compile Include="Il2CppTMPro\VertexGradient.cs" />
+    <Compile Include="Il2CppTMPro\VertexSortingOrder.cs" />
+    <Compile Include="Il2CppTMPro\VerticalAlignmentOptions.cs" />
+    <Compile Include="Il2CppTMPro\WordWrapState.cs" />
+    <Compile Include="Il2Cpp\_PrivateImplementationDetails_.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

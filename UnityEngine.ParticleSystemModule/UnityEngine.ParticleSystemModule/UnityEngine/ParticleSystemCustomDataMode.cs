@@ -1,0 +1,15 @@
+﻿using System;
+
+namespace UnityEngine
+{
+	// Token: 0x02000027 RID: 39
+	public enum ParticleSystemCustomDataMode
+	{
+		// Token: 0x0400011E RID: 286
+		Disabled,
+		// Token: 0x0400011F RID: 287
+		Vector,
+		// Token: 0x04000120 RID: 288
+		Color
+	}
+}

@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1527EC25-51B8-4005-BD55-345B55968A65}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp-firstpass</RootNamespace>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Il2CppDOTween">
+      <HintPath>..\..\..\Il2CppDOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Common" />
+    <Reference Include="Il2CppInterop.Runtime" />
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\..\..\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime" />
+    <Reference Include="Unity.Timeline">
+      <HintPath>..\..\..\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Il2CppCodeStage\AntiCheat\Common\ACTkByte16.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\Common\ACTkByte4.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\Common\ACTkByte8.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\Common\ACTkConstants.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\Detectors\ActDetectorBase.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\Detectors\InjectionDetector.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\Detectors\ObscuredCheatingDetector.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\Detectors\SpeedHackDetector.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\Detectors\TimeCheatingDetector.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\Detectors\WallHackDetector.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\BitconverterExt.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredBool.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredByte.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredChar.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredDecimal.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredDouble.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredFloat.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredInt.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredLong.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredPrefs.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredQuaternion.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredSByte.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredShort.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredString.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredUInt.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredULong.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredUShort.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredVector2.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredVector2Int.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredVector3.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\ObscuredTypes\ObscuredVector3Int.cs" />
+    <Compile Include="Il2CppCodeStage\AntiCheat\Utils\xxHash.cs" />
+    <Compile Include="Il2CppDG\Tweening\DOTweenCYInstruction.cs" />
+    <Compile Include="Il2CppDG\Tweening\DOTweenModuleAudio.cs" />
+    <Compile Include="Il2CppDG\Tweening\DOTweenModulePhysics.cs" />
+    <Compile Include="Il2CppDG\Tweening\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Il2CppDG\Tweening\DOTweenModuleSprite.cs" />
+    <Compile Include="Il2CppDG\Tweening\DOTweenModuleUI.cs" />
+    <Compile Include="Il2CppDG\Tweening\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Il2CppDG\Tweening\DOTweenModuleUtils.cs" />
+    <Compile Include="Il2CppKlak\Timeline\AudioPreview.cs" />
+    <Compile Include="Il2CppKlak\Timeline\AudioPreviewMixer.cs" />
+    <Compile Include="Il2CppKlak\Timeline\AudioPreviewPlayable.cs" />
+    <Compile Include="Il2CppKlak\Timeline\AudioPreviewTrack.cs" />
+    <Compile Include="Il2CppLetterboxCamera\CameraRatio.cs" />
+    <Compile Include="Il2CppLetterboxCamera\ForceCameraRatio.cs" />
+    <Compile Include="Il2CppSanford\Collections\Deque.cs" />
+    <Compile Include="Il2CppSanford\Collections\Generic\Deque.cs" />
+    <Compile Include="Il2CppSanford\Collections\Generic\ICommand.cs" />
+    <Compile Include="Il2CppSanford\Collections\Generic\UndoableList.cs" />
+    <Compile Include="Il2CppSanford\Collections\Generic\UndoManager.cs" />
+    <Compile Include="Il2CppSanford\Collections\Immutable\Array.cs" />
+    <Compile Include="Il2CppSanford\Collections\Immutable\ArrayList.cs" />
+    <Compile Include="Il2CppSanford\Collections\Immutable\AvlEnumerator.cs" />
+    <Compile Include="Il2CppSanford\Collections\Immutable\AvlNode.cs" />
+    <Compile Include="Il2CppSanford\Collections\Immutable\IAvlNode.cs" />
+    <Compile Include="Il2CppSanford\Collections\Immutable\NullAvlNode.cs" />
+    <Compile Include="Il2CppSanford\Collections\Immutable\RalEnumerator.cs" />
+    <Compile Include="Il2CppSanford\Collections\Immutable\RalTopNode.cs" />
+    <Compile Include="Il2CppSanford\Collections\Immutable\RalTreeNode.cs" />
+    <Compile Include="Il2CppSanford\Collections\Immutable\RandomAccessList.cs" />
+    <Compile Include="Il2CppSanford\Collections\Immutable\SortedList.cs" />
+    <Compile Include="Il2CppSanford\Collections\Immutable\Stack.cs" />
+    <Compile Include="Il2CppSanford\Collections\PriorityQueue.cs" />
+    <Compile Include="Il2CppSanford\Collections\SkipList.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Device.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\DeviceException.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\ErrorEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Key.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\ChannelChaser.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\ChannelCommand.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\ChannelMessage.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\ChannelMessageBuilder.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\ChannelMessageEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\ChannelStopper.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\ChasedEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\ControllerType.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\GeneralMidiInstrument.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\IClock.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\IMessageBuilder.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\IMidiMessage.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\InputDevice.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\InputDeviceException.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\InputDeviceMidiEvents.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\InvalidShortMessageEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\InvalidSysExMessageEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\KeySignatureBuilder.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MergeMidiEvents.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MessageDispatcher.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MessageType.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MetaMessage.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MetaMessageEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MetaTextBuilder.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MetaType.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiDevice.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiDeviceException.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiEvent.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiEvents.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiFileException.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiFileProperties.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiHeader.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiHeaderBuilder.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiInCaps.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiInParams.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiInternalClock.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiMessageBase.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiMessageEventHandler.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiNoteConverter.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\MidiOutCaps.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\NoOpEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\OutputDevice.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\OutputDeviceBase.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\OutputDeviceEventSink.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\OutputDeviceException.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\OutputStream.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\PpqnClock.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\RecordingSession.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\Sequence.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\Sequencer.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SequenceType.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\ShortMessage.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\ShortMessageEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SmpteFrameRate.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SongPositionPointerBuilder.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\StoppedEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SysCommonMessage.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SysCommonMessageBuilder.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SysCommonMessageEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SysCommonType.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SysExMessage.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SysExMessageEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SysExType.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SysRealtimeMessage.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SysRealtimeMessageEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\SysRealtimeType.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\TempoChangeBuilder.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\TimeSignatureBuilder.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\Track.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\TrackReader.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Midi\TrackWriter.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Note.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Timers\ITimer.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Timers\ThreadTimer.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Timers\ThreadTimerQueue.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Timers\Time.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Timers\Timer.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Timers\TimerCaps.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Timers\TimerFactory.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Timers\TimerMode.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Timers\TimerStartException.cs" />
+    <Compile Include="Il2CppSanford\Multimedia\Timers\TimeType.cs" />
+    <Compile Include="Il2CppSanford\Threading\AsyncResult.cs" />
+    <Compile Include="Il2CppSanford\Threading\DelegateQueue.cs" />
+    <Compile Include="Il2CppSanford\Threading\DelegateScheduler.cs" />
+    <Compile Include="Il2CppSanford\Threading\InvokeCompletedEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Threading\PostCompletedEventArgs.cs" />
+    <Compile Include="Il2CppSanford\Threading\Task.cs" />
+    <Compile Include="Il2CppSteamworks\AccountID_t.cs" />
+    <Compile Include="Il2CppSteamworks\AddAppDependencyResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\AddUGCDependencyResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\AppId_t.cs" />
+    <Compile Include="Il2CppSteamworks\AppProofOfPurchaseKeyResponse_t.cs" />
+    <Compile Include="Il2CppSteamworks\AssociateWithClanResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\AudioPlayback_Status.cs" />
+    <Compile Include="Il2CppSteamworks\AvatarImageLoaded_t.cs" />
+    <Compile Include="Il2CppSteamworks\BroadcastUploadStart_t.cs" />
+    <Compile Include="Il2CppSteamworks\BroadcastUploadStop_t.cs" />
+    <Compile Include="Il2CppSteamworks\Callback.cs" />
+    <Compile Include="Il2CppSteamworks\CallbackDispatcher.cs" />
+    <Compile Include="Il2CppSteamworks\CallbackIdentities.cs" />
+    <Compile Include="Il2CppSteamworks\CallbackIdentityAttribute.cs" />
+    <Compile Include="Il2CppSteamworks\CallbackMsg_t.cs" />
+    <Compile Include="Il2CppSteamworks\CallResult.cs" />
+    <Compile Include="Il2CppSteamworks\CCallbackBase.cs" />
+    <Compile Include="Il2CppSteamworks\CCallbackBaseVTable.cs" />
+    <Compile Include="Il2CppSteamworks\CGameID.cs" />
+    <Compile Include="Il2CppSteamworks\CheckFileSignature_t.cs" />
+    <Compile Include="Il2CppSteamworks\ClanOfficerListResponse_t.cs" />
+    <Compile Include="Il2CppSteamworks\ClientGameServerDeny_t.cs" />
+    <Compile Include="Il2CppSteamworks\ComputeNewPlayerCompatibilityResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\Constants.cs" />
+    <Compile Include="Il2CppSteamworks\ControllerActionSetHandle_t.cs" />
+    <Compile Include="Il2CppSteamworks\ControllerAnalogActionData_t.cs" />
+    <Compile Include="Il2CppSteamworks\ControllerAnalogActionHandle_t.cs" />
+    <Compile Include="Il2CppSteamworks\ControllerDigitalActionData_t.cs" />
+    <Compile Include="Il2CppSteamworks\ControllerDigitalActionHandle_t.cs" />
+    <Compile Include="Il2CppSteamworks\ControllerHandle_t.cs" />
+    <Compile Include="Il2CppSteamworks\ControllerMotionData_t.cs" />
+    <Compile Include="Il2CppSteamworks\CreateItemResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\CSteamAPIContext.cs" />
+    <Compile Include="Il2CppSteamworks\CSteamGameServerAPIContext.cs" />
+    <Compile Include="Il2CppSteamworks\CSteamID.cs" />
+    <Compile Include="Il2CppSteamworks\DeleteItemResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\DepotId_t.cs" />
+    <Compile Include="Il2CppSteamworks\DlcInstalled_t.cs" />
+    <Compile Include="Il2CppSteamworks\DllCheck.cs" />
+    <Compile Include="Il2CppSteamworks\DownloadClanActivityCountsResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\DownloadItemResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\EAccountType.cs" />
+    <Compile Include="Il2CppSteamworks\EAppOwnershipFlags.cs" />
+    <Compile Include="Il2CppSteamworks\EAppReleaseState.cs" />
+    <Compile Include="Il2CppSteamworks\EAppType.cs" />
+    <Compile Include="Il2CppSteamworks\EAuthSessionResponse.cs" />
+    <Compile Include="Il2CppSteamworks\EBeginAuthSessionResult.cs" />
+    <Compile Include="Il2CppSteamworks\EBroadcastUploadResult.cs" />
+    <Compile Include="Il2CppSteamworks\EChatEntryType.cs" />
+    <Compile Include="Il2CppSteamworks\EChatMemberStateChange.cs" />
+    <Compile Include="Il2CppSteamworks\EChatRoomEnterResponse.cs" />
+    <Compile Include="Il2CppSteamworks\EChatSteamIDInstanceFlags.cs" />
+    <Compile Include="Il2CppSteamworks\ECheckFileSignature.cs" />
+    <Compile Include="Il2CppSteamworks\EControllerActionOrigin.cs" />
+    <Compile Include="Il2CppSteamworks\EControllerSource.cs" />
+    <Compile Include="Il2CppSteamworks\EControllerSourceMode.cs" />
+    <Compile Include="Il2CppSteamworks\EDenyReason.cs" />
+    <Compile Include="Il2CppSteamworks\EFailureType.cs" />
+    <Compile Include="Il2CppSteamworks\EFriendFlags.cs" />
+    <Compile Include="Il2CppSteamworks\EFriendRelationship.cs" />
+    <Compile Include="Il2CppSteamworks\EGamepadTextInputLineMode.cs" />
+    <Compile Include="Il2CppSteamworks\EGamepadTextInputMode.cs" />
+    <Compile Include="Il2CppSteamworks\EGCResults.cs" />
+    <Compile Include="Il2CppSteamworks\EHTMLKeyModifiers.cs" />
+    <Compile Include="Il2CppSteamworks\EHTMLMouseButton.cs" />
+    <Compile Include="Il2CppSteamworks\EHTTPMethod.cs" />
+    <Compile Include="Il2CppSteamworks\EHTTPStatusCode.cs" />
+    <Compile Include="Il2CppSteamworks\EItemPreviewType.cs" />
+    <Compile Include="Il2CppSteamworks\EItemState.cs" />
+    <Compile Include="Il2CppSteamworks\EItemStatistic.cs" />
+    <Compile Include="Il2CppSteamworks\EItemUpdateStatus.cs" />
+    <Compile Include="Il2CppSteamworks\ELaunchOptionType.cs" />
+    <Compile Include="Il2CppSteamworks\ELeaderboardDataRequest.cs" />
+    <Compile Include="Il2CppSteamworks\ELeaderboardDisplayType.cs" />
+    <Compile Include="Il2CppSteamworks\ELeaderboardSortMethod.cs" />
+    <Compile Include="Il2CppSteamworks\ELeaderboardUploadScoreMethod.cs" />
+    <Compile Include="Il2CppSteamworks\ELobbyComparison.cs" />
+    <Compile Include="Il2CppSteamworks\ELobbyDistanceFilter.cs" />
+    <Compile Include="Il2CppSteamworks\ELobbyType.cs" />
+    <Compile Include="Il2CppSteamworks\EMarketingMessageFlags.cs" />
+    <Compile Include="Il2CppSteamworks\EMatchMakingServerResponse.cs" />
+    <Compile Include="Il2CppSteamworks\EMouseCursor.cs" />
+    <Compile Include="Il2CppSteamworks\EncryptedAppTicketResponse_t.cs" />
+    <Compile Include="Il2CppSteamworks\ENotificationPosition.cs" />
+    <Compile Include="Il2CppSteamworks\EOverlayToStoreFlag.cs" />
+    <Compile Include="Il2CppSteamworks\EP2PSend.cs" />
+    <Compile Include="Il2CppSteamworks\EP2PSessionError.cs" />
+    <Compile Include="Il2CppSteamworks\EParentalFeature.cs" />
+    <Compile Include="Il2CppSteamworks\EPersonaChange.cs" />
+    <Compile Include="Il2CppSteamworks\EPersonaState.cs" />
+    <Compile Include="Il2CppSteamworks\ERegisterActivationCodeResult.cs" />
+    <Compile Include="Il2CppSteamworks\ERemoteStoragePlatform.cs" />
+    <Compile Include="Il2CppSteamworks\ERemoteStoragePublishedFileVisibility.cs" />
+    <Compile Include="Il2CppSteamworks\EResult.cs" />
+    <Compile Include="Il2CppSteamworks\EServerMode.cs" />
+    <Compile Include="Il2CppSteamworks\ESNetSocketConnectionType.cs" />
+    <Compile Include="Il2CppSteamworks\ESNetSocketState.cs" />
+    <Compile Include="Il2CppSteamworks\ESteamAPICallFailure.cs" />
+    <Compile Include="Il2CppSteamworks\ESteamControllerLEDFlag.cs" />
+    <Compile Include="Il2CppSteamworks\ESteamControllerPad.cs" />
+    <Compile Include="Il2CppSteamworks\ESteamInputType.cs" />
+    <Compile Include="Il2CppSteamworks\ESteamItemFlags.cs" />
+    <Compile Include="Il2CppSteamworks\ESteamUserStatType.cs" />
+    <Compile Include="Il2CppSteamworks\EUGCMatchingUGCType.cs" />
+    <Compile Include="Il2CppSteamworks\EUGCQuery.cs" />
+    <Compile Include="Il2CppSteamworks\EUGCReadAction.cs" />
+    <Compile Include="Il2CppSteamworks\EUniverse.cs" />
+    <Compile Include="Il2CppSteamworks\EUserHasLicenseForAppResult.cs" />
+    <Compile Include="Il2CppSteamworks\EUserRestriction.cs" />
+    <Compile Include="Il2CppSteamworks\EUserUGCList.cs" />
+    <Compile Include="Il2CppSteamworks\EUserUGCListSortOrder.cs" />
+    <Compile Include="Il2CppSteamworks\EVoiceResult.cs" />
+    <Compile Include="Il2CppSteamworks\EVRHMDType.cs" />
+    <Compile Include="Il2CppSteamworks\EVRScreenshotType.cs" />
+    <Compile Include="Il2CppSteamworks\EWorkshopEnumerationType.cs" />
+    <Compile Include="Il2CppSteamworks\EWorkshopFileAction.cs" />
+    <Compile Include="Il2CppSteamworks\EWorkshopFileType.cs" />
+    <Compile Include="Il2CppSteamworks\EWorkshopVideoProvider.cs" />
+    <Compile Include="Il2CppSteamworks\EWorkshopVote.cs" />
+    <Compile Include="Il2CppSteamworks\FavoritesListAccountsUpdated_t.cs" />
+    <Compile Include="Il2CppSteamworks\FavoritesListChanged_t.cs" />
+    <Compile Include="Il2CppSteamworks\FileDetailsResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\FriendGameInfo_t.cs" />
+    <Compile Include="Il2CppSteamworks\FriendRichPresenceUpdate_t.cs" />
+    <Compile Include="Il2CppSteamworks\FriendsEnumerateFollowingList_t.cs" />
+    <Compile Include="Il2CppSteamworks\FriendSessionStateInfo_t.cs" />
+    <Compile Include="Il2CppSteamworks\FriendsGetFollowerCount_t.cs" />
+    <Compile Include="Il2CppSteamworks\FriendsGroupID_t.cs" />
+    <Compile Include="Il2CppSteamworks\FriendsIsFollowing_t.cs" />
+    <Compile Include="Il2CppSteamworks\GameConnectedChatJoin_t.cs" />
+    <Compile Include="Il2CppSteamworks\GameConnectedChatLeave_t.cs" />
+    <Compile Include="Il2CppSteamworks\GameConnectedClanChatMsg_t.cs" />
+    <Compile Include="Il2CppSteamworks\GameConnectedFriendChatMsg_t.cs" />
+    <Compile Include="Il2CppSteamworks\GameLobbyJoinRequested_t.cs" />
+    <Compile Include="Il2CppSteamworks\GameOverlayActivated_t.cs" />
+    <Compile Include="Il2CppSteamworks\GamepadTextInputDismissed_t.cs" />
+    <Compile Include="Il2CppSteamworks\GameRichPresenceJoinRequested_t.cs" />
+    <Compile Include="Il2CppSteamworks\GameServer.cs" />
+    <Compile Include="Il2CppSteamworks\GameServerChangeRequested_t.cs" />
+    <Compile Include="Il2CppSteamworks\gameserveritem_t.cs" />
+    <Compile Include="Il2CppSteamworks\GameWebCallback_t.cs" />
+    <Compile Include="Il2CppSteamworks\GCMessageAvailable_t.cs" />
+    <Compile Include="Il2CppSteamworks\GCMessageFailed_t.cs" />
+    <Compile Include="Il2CppSteamworks\GetAppDependenciesResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\GetAuthSessionTicketResponse_t.cs" />
+    <Compile Include="Il2CppSteamworks\GetOPFSettingsResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\GetUserItemVoteResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\GetVideoURLResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\GlobalAchievementPercentagesReady_t.cs" />
+    <Compile Include="Il2CppSteamworks\GlobalStatsReceived_t.cs" />
+    <Compile Include="Il2CppSteamworks\GSClientAchievementStatus_t.cs" />
+    <Compile Include="Il2CppSteamworks\GSClientApprove_t.cs" />
+    <Compile Include="Il2CppSteamworks\GSClientDeny_t.cs" />
+    <Compile Include="Il2CppSteamworks\GSClientGroupStatus_t.cs" />
+    <Compile Include="Il2CppSteamworks\GSClientKick_t.cs" />
+    <Compile Include="Il2CppSteamworks\GSGameplayStats_t.cs" />
+    <Compile Include="Il2CppSteamworks\GSPolicyResponse_t.cs" />
+    <Compile Include="Il2CppSteamworks\GSReputation_t.cs" />
+    <Compile Include="Il2CppSteamworks\GSStatsReceived_t.cs" />
+    <Compile Include="Il2CppSteamworks\GSStatsStored_t.cs" />
+    <Compile Include="Il2CppSteamworks\GSStatsUnloaded_t.cs" />
+    <Compile Include="Il2CppSteamworks\HAuthTicket.cs" />
+    <Compile Include="Il2CppSteamworks\HHTMLBrowser.cs" />
+    <Compile Include="Il2CppSteamworks\HServerListRequest.cs" />
+    <Compile Include="Il2CppSteamworks\HServerQuery.cs" />
+    <Compile Include="Il2CppSteamworks\HSteamPipe.cs" />
+    <Compile Include="Il2CppSteamworks\HSteamUser.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_BrowserReady_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_BrowserRestarted_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_CanGoBackAndForward_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_ChangedTitle_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_CloseBrowser_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_FileOpenDialog_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_FinishedRequest_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_HideToolTip_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_HorizontalScroll_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_JSAlert_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_JSConfirm_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_LinkAtPosition_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_NeedsPaint_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_NewWindow_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_OpenLinkInNewTab_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_SearchResults_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_SetCursor_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_ShowToolTip_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_StartRequest_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_StatusText_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_UpdateToolTip_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_URLChanged_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTML_VerticalScroll_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTTPCookieContainerHandle.cs" />
+    <Compile Include="Il2CppSteamworks\HTTPRequestCompleted_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTTPRequestDataReceived_t.cs" />
+    <Compile Include="Il2CppSteamworks\HTTPRequestHandle.cs" />
+    <Compile Include="Il2CppSteamworks\HTTPRequestHeadersReceived_t.cs" />
+    <Compile Include="Il2CppSteamworks\ICallback.cs" />
+    <Compile Include="Il2CppSteamworks\InteropHelp.cs" />
+    <Compile Include="Il2CppSteamworks\IPCFailure_t.cs" />
+    <Compile Include="Il2CppSteamworks\IPCountry_t.cs" />
+    <Compile Include="Il2CppSteamworks\ISteamMatchmakingPingResponse.cs" />
+    <Compile Include="Il2CppSteamworks\ISteamMatchmakingPlayersResponse.cs" />
+    <Compile Include="Il2CppSteamworks\ISteamMatchmakingRulesResponse.cs" />
+    <Compile Include="Il2CppSteamworks\ISteamMatchmakingServerListResponse.cs" />
+    <Compile Include="Il2CppSteamworks\ItemInstalled_t.cs" />
+    <Compile Include="Il2CppSteamworks\JoinClanChatRoomCompletionResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\LeaderboardEntry_t.cs" />
+    <Compile Include="Il2CppSteamworks\LeaderboardFindResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\LeaderboardScoresDownloaded_t.cs" />
+    <Compile Include="Il2CppSteamworks\LeaderboardScoreUploaded_t.cs" />
+    <Compile Include="Il2CppSteamworks\LeaderboardUGCSet_t.cs" />
+    <Compile Include="Il2CppSteamworks\LicensesUpdated_t.cs" />
+    <Compile Include="Il2CppSteamworks\LobbyChatMsg_t.cs" />
+    <Compile Include="Il2CppSteamworks\LobbyChatUpdate_t.cs" />
+    <Compile Include="Il2CppSteamworks\LobbyCreated_t.cs" />
+    <Compile Include="Il2CppSteamworks\LobbyDataUpdate_t.cs" />
+    <Compile Include="Il2CppSteamworks\LobbyEnter_t.cs" />
+    <Compile Include="Il2CppSteamworks\LobbyGameCreated_t.cs" />
+    <Compile Include="Il2CppSteamworks\LobbyInvite_t.cs" />
+    <Compile Include="Il2CppSteamworks\LobbyKicked_t.cs" />
+    <Compile Include="Il2CppSteamworks\LobbyMatchList_t.cs" />
+    <Compile Include="Il2CppSteamworks\LowBatteryPower_t.cs" />
+    <Compile Include="Il2CppSteamworks\ManifestId_t.cs" />
+    <Compile Include="Il2CppSteamworks\MatchMakingKeyValuePair_t.cs" />
+    <Compile Include="Il2CppSteamworks\MicroTxnAuthorizationResponse_t.cs" />
+    <Compile Include="Il2CppSteamworks\MMKVPMarshaller.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerRemoteToFront_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerRemoteWillActivate_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerRemoteWillDeactivate_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerSelectsPlaylistEntry_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerSelectsQueueEntry_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerWantsLooped_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerWantsPause_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerWantsPlayingRepeatStatus_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerWantsPlayNext_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerWantsPlayPrevious_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerWantsPlay_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerWantsShuffled_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerWantsVolume_t.cs" />
+    <Compile Include="Il2CppSteamworks\MusicPlayerWillQuit_t.cs" />
+    <Compile Include="Il2CppSteamworks\NativeMethods.cs" />
+    <Compile Include="Il2CppSteamworks\NewLaunchQueryParameters_t.cs" />
+    <Compile Include="Il2CppSteamworks\NumberOfCurrentPlayers_t.cs" />
+    <Compile Include="Il2CppSteamworks\P2PSessionConnectFail_t.cs" />
+    <Compile Include="Il2CppSteamworks\P2PSessionRequest_t.cs" />
+    <Compile Include="Il2CppSteamworks\P2PSessionState_t.cs" />
+    <Compile Include="Il2CppSteamworks\Packsize.cs" />
+    <Compile Include="Il2CppSteamworks\PersonaStateChange_t.cs" />
+    <Compile Include="Il2CppSteamworks\PlaybackStatusHasChanged_t.cs" />
+    <Compile Include="Il2CppSteamworks\PublishedFileId_t.cs" />
+    <Compile Include="Il2CppSteamworks\PublishedFileUpdateHandle_t.cs" />
+    <Compile Include="Il2CppSteamworks\RegisterActivationCodeResponse_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageAppSyncedClient_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageAppSyncedServer_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageAppSyncProgress_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageAppSyncStatusCheck_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageDeletePublishedFileResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageDownloadUGCResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageEnumeratePublishedFilesByUserActionResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageEnumerateUserPublishedFilesResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageEnumerateUserSharedWorkshopFilesResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageEnumerateUserSubscribedFilesResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageEnumerateWorkshopFilesResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageFileReadAsyncComplete_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageFileShareResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageFileWriteAsyncComplete_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageGetPublishedFileDetailsResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageGetPublishedItemVoteDetailsResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStoragePublishedFileDeleted_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStoragePublishedFileSubscribed_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStoragePublishedFileUnsubscribed_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStoragePublishedFileUpdated_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStoragePublishFileProgress_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStoragePublishFileResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageSetUserPublishedFileActionResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageSubscribePublishedFileResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageUnsubscribePublishedFileResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageUpdatePublishedFileResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageUpdateUserPublishedItemVoteResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoteStorageUserVoteDetails_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoveAppDependencyResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\RemoveUGCDependencyResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\ScreenshotHandle.cs" />
+    <Compile Include="Il2CppSteamworks\ScreenshotReady_t.cs" />
+    <Compile Include="Il2CppSteamworks\ScreenshotRequested_t.cs" />
+    <Compile Include="Il2CppSteamworks\servernetadr_t.cs" />
+    <Compile Include="Il2CppSteamworks\SetPersonaNameResponse_t.cs" />
+    <Compile Include="Il2CppSteamworks\SetUserItemVoteResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\SiteId_t.cs" />
+    <Compile Include="Il2CppSteamworks\SNetListenSocket_t.cs" />
+    <Compile Include="Il2CppSteamworks\SNetSocket_t.cs" />
+    <Compile Include="Il2CppSteamworks\SocketStatusCallback_t.cs" />
+    <Compile Include="Il2CppSteamworks\StartPlaytimeTrackingResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamAPI.cs" />
+    <Compile Include="Il2CppSteamworks\SteamAPICallCompleted_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamAPICall_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamAPIWarningMessageHook_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamAPI_CheckCallbackRegistered_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamAppInstalled_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamAppList.cs" />
+    <Compile Include="Il2CppSteamworks\SteamApps.cs" />
+    <Compile Include="Il2CppSteamworks\SteamAppUninstalled_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamClient.cs" />
+    <Compile Include="Il2CppSteamworks\SteamController.cs" />
+    <Compile Include="Il2CppSteamworks\SteamEncryptedAppTicket.cs" />
+    <Compile Include="Il2CppSteamworks\SteamFriends.cs" />
+    <Compile Include="Il2CppSteamworks\SteamGameServer.cs" />
+    <Compile Include="Il2CppSteamworks\SteamGameServerApps.cs" />
+    <Compile Include="Il2CppSteamworks\SteamGameServerClient.cs" />
+    <Compile Include="Il2CppSteamworks\SteamGameServerHTTP.cs" />
+    <Compile Include="Il2CppSteamworks\SteamGameServerInventory.cs" />
+    <Compile Include="Il2CppSteamworks\SteamGameServerNetworking.cs" />
+    <Compile Include="Il2CppSteamworks\SteamGameServerStats.cs" />
+    <Compile Include="Il2CppSteamworks\SteamGameServerUGC.cs" />
+    <Compile Include="Il2CppSteamworks\SteamGameServerUtils.cs" />
+    <Compile Include="Il2CppSteamworks\SteamHTMLSurface.cs" />
+    <Compile Include="Il2CppSteamworks\SteamHTTP.cs" />
+    <Compile Include="Il2CppSteamworks\SteamInventory.cs" />
+    <Compile Include="Il2CppSteamworks\SteamInventoryDefinitionUpdate_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamInventoryEligiblePromoItemDefIDs_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamInventoryFullUpdate_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamInventoryRequestPricesResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamInventoryResultReady_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamInventoryResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamInventoryStartPurchaseResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamInventoryUpdateHandle_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamItemDef_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamItemDetails_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamItemInstanceID_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamLeaderboardEntries_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamLeaderboard_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamMatchmaking.cs" />
+    <Compile Include="Il2CppSteamworks\SteamMatchmakingServers.cs" />
+    <Compile Include="Il2CppSteamworks\SteamMusic.cs" />
+    <Compile Include="Il2CppSteamworks\SteamMusicRemote.cs" />
+    <Compile Include="Il2CppSteamworks\SteamNetworking.cs" />
+    <Compile Include="Il2CppSteamworks\SteamParamStringArray_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamParentalSettings.cs" />
+    <Compile Include="Il2CppSteamworks\SteamParentalSettingsChanged_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamRemoteStorage.cs" />
+    <Compile Include="Il2CppSteamworks\SteamScreenshots.cs" />
+    <Compile Include="Il2CppSteamworks\SteamServerConnectFailure_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamServersConnected_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamServersDisconnected_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamShutdown_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamUGC.cs" />
+    <Compile Include="Il2CppSteamworks\SteamUGCDetails_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamUGCQueryCompleted_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamUGCRequestUGCDetailsResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\SteamUser.cs" />
+    <Compile Include="Il2CppSteamworks\SteamUserStats.cs" />
+    <Compile Include="Il2CppSteamworks\SteamUtils.cs" />
+    <Compile Include="Il2CppSteamworks\SteamVideo.cs" />
+    <Compile Include="Il2CppSteamworks\StopPlaytimeTrackingResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\StoreAuthURLResponse_t.cs" />
+    <Compile Include="Il2CppSteamworks\SubmitItemUpdateResult_t.cs" />
+    <Compile Include="Il2CppSteamworks\UGCFileWriteStreamHandle_t.cs" />
+    <Compile Include="Il2CppSteamworks\UGCHandle_t.cs" />
+    <Compile Include="Il2CppSteamworks\UGCQueryHandle_t.cs" />
+    <Compile Include="Il2CppSteamworks\UGCUpdateHandle_t.cs" />
+    <Compile Include="Il2CppSteamworks\UserAchievementIconFetched_t.cs" />
+    <Compile Include="Il2CppSteamworks\UserAchievementStored_t.cs" />
+    <Compile Include="Il2CppSteamworks\UserFavoriteItemsListChanged_t.cs" />
+    <Compile Include="Il2CppSteamworks\UserStatsReceived_t.cs" />
+    <Compile Include="Il2CppSteamworks\UserStatsStored_t.cs" />
+    <Compile Include="Il2CppSteamworks\UserStatsUnloaded_t.cs" />
+    <Compile Include="Il2CppSteamworks\ValidateAuthTicketResponse_t.cs" />
+    <Compile Include="Il2CppSteamworks\Version.cs" />
+    <Compile Include="Il2CppSteamworks\VolumeHasChanged_t.cs" />
+    <Compile Include="Il2CppSuperBlur\BlurKernelSize.cs" />
+    <Compile Include="Il2CppSuperBlur\RenderMode.cs" />
+    <Compile Include="Il2CppSuperBlur\SuperBlur.cs" />
+    <Compile Include="Il2CppSuperBlur\SuperBlurBase.cs" />
+    <Compile Include="Il2CppSuperBlur\SuperBlurFast.cs" />
+    <Compile Include="Il2Cpp\MonoBehaviourSingleton.cs" />
+    <Compile Include="Il2Cpp\PolyConvert.cs" />
+    <Compile Include="Il2Cpp\Triangulator.cs" />
+    <Compile Include="Il2Cpp\_PrivateImplementationDetails_.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
